@@ -11,7 +11,7 @@ import SwiftUI
 struct AztecApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FlowView()
         }
     }
 }
