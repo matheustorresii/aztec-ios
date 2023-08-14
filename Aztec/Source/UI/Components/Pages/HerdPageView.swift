@@ -11,7 +11,7 @@ struct HerdPageView: View {
     
     @State private var paged = false
     
-    private let timer = Timer.publish(every: 0.75, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
         GeometryReader { geometry in
@@ -25,6 +25,7 @@ struct HerdPageView: View {
                     createSquaredHerd()
                 }
             }
+            .clipped()
             .frame(width: rect.width, height: rect.width)
             .onReceive(timer) { startDate in
                 withAnimation {
