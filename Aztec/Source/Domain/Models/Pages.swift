@@ -8,7 +8,7 @@
 import Foundation
 
 enum Pages {
-    case beggining
+    case beginning
     case gods
     case firstSun
     case herd
@@ -19,13 +19,13 @@ enum Pages {
     case fourthSun
     case flood
     case moon
-    case humans
+    case human
     case fifthSun
     
     var topText: String? {
         switch self {
-        case .beggining:
-            return "pages.beggining.top"
+        case .beginning:
+            return "pages.beginning.top"
         case .gods:
             return "pages.gods.top"
         case .firstSun:
@@ -46,8 +46,8 @@ enum Pages {
             return "pages.flood.top"
         case .moon:
             return "pages.moon.top"
-        case .humans:
-            return "pages.humans.top"
+        case .human:
+            return "pages.human.top"
         case .fifthSun:
             return nil
         }
@@ -55,7 +55,7 @@ enum Pages {
     
     var bottomText: String? {
         switch self {
-        case .beggining:
+        case .beginning:
             return nil
         case .gods:
             return nil
@@ -77,8 +77,8 @@ enum Pages {
             return "pages.flood.bottom"
         case .moon:
             return "pages.moon.bottom"
-        case .humans:
-            return "pages.humans.bottom"
+        case .human:
+            return "pages.human.bottom"
         case .fifthSun:
             return "pages.fifthSun.bottom"
         }
@@ -86,7 +86,7 @@ enum Pages {
     
     var next: Pages? {
         switch self {
-        case .beggining:
+        case .beginning:
             return .gods
         case .gods:
             return .firstSun
@@ -107,8 +107,8 @@ enum Pages {
         case .flood:
             return .moon
         case .moon:
-            return .humans
-        case .humans:
+            return .human
+        case .human:
             return .fifthSun
         case .fifthSun:
             return nil
@@ -117,10 +117,10 @@ enum Pages {
     
     var previous: Pages? {
         switch self {
-        case .beggining:
+        case .beginning:
             return nil
         case .gods:
-            return .beggining
+            return .beginning
         case .firstSun:
             return .gods
         case .herd:
@@ -139,10 +139,10 @@ enum Pages {
             return .fourthSun
         case .moon:
             return .flood
-        case .humans:
+        case .human:
             return .moon
         case .fifthSun:
-            return .humans
+            return .human
         }
     }
 }

@@ -28,12 +28,32 @@ struct PageView: View {
     @ViewBuilder
     private func buildAnimation() -> some View {
         switch page {
+        case .beginning:
+            BeginningPageView()
         case .gods:
             GodsPageView()
+        case .firstSun:
+            FirstSunPageView()
         case .herd:
             HerdPageView()
-        default:
-            GodsPageView()
+        case .secondSun:
+            SecondSunPageView()
+        case .hurricane:
+            HurricanePageView()
+        case .thirdSun:
+            ThirdSunPageView()
+        case .drought:
+            DroughtPageView()
+        case .fourthSun:
+            FourthSunPageView()
+        case .flood:
+            FloodPageView()
+        case .moon:
+            MoonPageView()
+        case .human:
+            HumanPageView()
+        case .fifthSun:
+            FifthSunPageView()
         }
     }
     

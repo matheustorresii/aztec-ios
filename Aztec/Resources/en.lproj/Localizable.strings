@@ -8,7 +8,7 @@
 
 // PAGES
 
-"pages.beggining.top" = "A long time ago, Ōmeteōtl, the dual god, had four children.";
+"pages.beginning.top" = "A long time ago, Ōmeteōtl, the dual god, had four children.";
 
 "pages.gods.top" = "They were Xipe Totec, Tezcatlipoca, Quetzalcóatl, and Huitzilopochtli.";
 
@@ -37,7 +37,7 @@
 "pages.moon.top" = "The gods gathered to decide who would sacrifice themselves to become the Fifth Sun, and they chose two gods: Nanauatl, a humble and modest god, and Tecciztecatl, a rich and powerful god, who tried four times to jump into the fire but feared the intense heat of the flames.";
 "pages.moon.bottom" = "Finally, Nanauatl jumped, followed by the ashamed Tecciztecatl, and Nanauatl became the true Sun, receiving a new name, Tonatiuh. Concerned about the second sun, the other gods threw a rabbit at Tecciztecatl, turning him into the Moon.";
 
-"pages.humans.top" = "Meanwhile, Quetzalcóatl did not accept the destruction of his people and went to the underworld, stole the bones of those who came before, and immersed them in his own blood.";
-"pages.humans.bottom" = "People offered their own blood to please Quetzalcóatl and thank him for sacrificing his own blood, and to please Tonatiuh, who would refuse to move if they didn't offer enough sacrifices.";
+"pages.human.top" = "Meanwhile, Quetzalcóatl did not accept the destruction of his people and went to the underworld, stole the bones of those who came before, and immersed them in his own blood.";
+"pages.human.bottom" = "People offered their own blood to please Quetzalcóatl and thank him for sacrificing his own blood, and to please Tonatiuh, who would refuse to move if they didn't offer enough sacrifices.";
 
 "pages.fifthSun.bottom" = "Currently, we are living in the Fifth Sun; this is the time we know and experience. According to the prophecy, it will end with a great earthquake.";

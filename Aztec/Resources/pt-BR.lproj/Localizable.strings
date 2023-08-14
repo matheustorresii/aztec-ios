@@ -8,7 +8,7 @@
 
 // PAGES
 
-"pages.beggining.top" = "Há muito tempo, Ōmeteōtl, o deus duplo, teve quatro filhos.";
+"pages.beginning.top" = "Há muito tempo, Ōmeteōtl, o deus duplo, teve quatro filhos.";
 
 "pages.gods.top" = "Eles eram Xipe Totec, Tezcatlipoca, Quetzalcóatl e Huitzilopochtli.";
 
@@ -37,7 +37,7 @@
 "pages.moon.top" = "Os deuses se reuniram para decidir quem se sacrificaria para se tornar o Quinto Sol, eles escolheram dois deuses: Nanauatl, um deus humilde e humilde, e Tecciztecatl, um deus rico e poderoso, que tentou quatro vezes pular na fogueira, mas temia o calor intenso das chamas.";
 "pages.moon.bottom" = "Finalmente, Nanauatl pulou, seguido pelo envergonhado Tecciztecatl, Nanauatl se tornou o verdadeiro Sol, recebendo um novo nome, Tonatiuh, preocupados com o segundo sol, os outros deuses lançaram um coelho em Tecciztecatl, transformando-o na Lua.";
 
-"pages.humans.top" = "Enquanto isso, Quetzalcóatl não aceitava a destruição de seu povo e foi ao submundo, roubou os ossos dos que vieram antes e os mergulhou em seu próprio sangue.";
-"pages.humans.bottom" = "As pessoas ofereciam seu próprio sangue para agradar Quetzalcóatl e agradecê-lo por sacrificar seu próprio sangue, e para agradar Tonatiuh, que se recusaria a se mover se não oferecessem sacrifícios suficientes.";
+"pages.human.top" = "Enquanto isso, Quetzalcóatl não aceitava a destruição de seu povo e foi ao submundo, roubou os ossos dos que vieram antes e os mergulhou em seu próprio sangue.";
+"pages.human.bottom" = "As pessoas ofereciam seu próprio sangue para agradar Quetzalcóatl e agradecê-lo por sacrificar seu próprio sangue, e para agradar Tonatiuh, que se recusaria a se mover se não oferecessem sacrifícios suficientes.";
 
 "pages.fifthSun.bottom" = "Atualmente, estamos vivendo no Quinto Sol, este é o tempo que conhecemos e experimentamos, de acordo com a profecia, ele terminará com um grande terremoto.";
