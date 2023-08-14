@@ -39,7 +39,7 @@ struct HurricanePageView: View {
                 .offset(x: 40, y: 10)
                 .frame(width: 100, height: 100, alignment: .center)
             HurricaneView()
-                .offset(x: 86, y: 70)
+                .offset(x: 85, y: 70)
                 .frame(width: 100, height: 100, alignment: .center)
         }
     }
@@ -47,12 +47,12 @@ struct HurricanePageView: View {
 
 struct HurricaneView: View {
     @State private var rotation = 0.0
-    @State private var hurricaneId = 1
+    @State private var id = 1
     
     private let timer = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        Image("hurricane-\(hurricaneId)")
+        Image("hurricane-\(id)")
             .resizable()
             .aspectRatio(contentMode: .fit)
             .rotationEffect(.degrees(-rotation), anchor: .center)
@@ -62,9 +62,9 @@ struct HurricaneView: View {
                     rotation = 360
                 }
             }
-            .onReceive(timer) { startDate in
+            .onReceive(timer) { _ in
                 withAnimation {
-                    hurricaneId = hurricaneId == 4 ? 1 : hurricaneId + 1
+                    id = id == 4 ? 1 : id + 1
                 }
             }
     }

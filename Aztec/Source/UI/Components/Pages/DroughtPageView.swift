@@ -8,8 +8,55 @@
 import SwiftUI
 
 struct DroughtPageView: View {
+    @State private var planetAnimated: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Image("planet-drought")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(50)
+                .rotationEffect(planetAnimated ? .degrees(-2) : .degrees(2))
+                .onAppear {
+                    withAnimation(.linear(duration: 1).repeatForever()) {
+                        planetAnimated.toggle()
+                    }
+                }
+            ExplosionView()
+                .offset(x: -60, y: 50)
+                .frame(width: 100, height: 100, alignment: .center)
+            ExplosionView()
+                .offset(x: -90, y: -80)
+                .frame(width: 100, height: 100, alignment: .center)
+            ExplosionView()
+                .offset(x: -10, y: -80)
+                .frame(width: 100, height: 100, alignment: .center)
+            ExplosionView()
+                .offset(x: 90, y: -60)
+                .frame(width: 100, height: 100, alignment: .center)
+            ExplosionView()
+                .offset(x: 20, y: -10)
+                .frame(width: 100, height: 100, alignment: .center)
+            ExplosionView()
+                .offset(x: 70, y: 60)
+                .frame(width: 100, height: 100, alignment: .center)
+        }
+    }
+}
+
+struct ExplosionView: View {
+    @State private var id = 1
+    
+    private let timer = Timer.publish(every: 0.2, on: .main, in: .common).autoconnect()
+    
+    var body: some View {
+        Image("explosion-\(id)")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .shadow(color: .black, radius: 20)
+            .onReceive(timer) { _ in
+                id = id == 4 ? 1 : id + 1
+            }
     }
 }
 

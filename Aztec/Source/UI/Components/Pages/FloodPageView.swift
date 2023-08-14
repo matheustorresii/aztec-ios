@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct FloodPageView: View {
+    @State private var planetAnimated: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image("planet-flooded")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .padding(50)
+            .rotationEffect(planetAnimated ? .degrees(-2) : .degrees(2))
+            .onAppear {
+                withAnimation(.linear(duration: 1).repeatForever()) {
+                    planetAnimated.toggle()
+                }
+            }
     }
 }
 
