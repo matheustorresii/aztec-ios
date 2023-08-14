@@ -13,28 +13,35 @@ struct PageView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 24) {
             if let topText = page.topText {
-                Text(LocalizedStringKey(topText))
-                    .font(.pressStart(size: 12))
-                    .multilineTextAlignment(.center)
+                buildText(topText)
             }
             
             buildAnimation()
                 .aspectRatio(1, contentMode: .fit)
             
             if let bottomText = page.bottomText {
-                Text(LocalizedStringKey(bottomText))
-                    .font(.pressStart(size: 12))
-                    .multilineTextAlignment(.center)
+                buildText(bottomText)
             }
         }
-        .padding(.horizontal, 16)
     }
     
     @ViewBuilder
     private func buildAnimation() -> some View {
         switch page {
+        case .gods:
+            GodsPageView()
+        case .herd:
+            HerdPageView()
         default:
             GodsPageView()
         }
+    }
+    
+    @ViewBuilder
+    private func buildText(_ text: String) -> some View {
+        Text(LocalizedStringKey(text))
+            .font(.pressStart(size: 12))
+            .multilineTextAlignment(.center)
+            .padding(.horizontal, 16)
     }
 }

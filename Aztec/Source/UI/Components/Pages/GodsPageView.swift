@@ -38,11 +38,18 @@ struct GodsPageView: View {
                     .rotationEffect(.degrees(-rotation))
             }
         }
+        .padding(.horizontal, 16)
         .rotationEffect(.degrees(rotation))
         .onAppear {
             withAnimation(.linear(duration: 20).repeatForever(autoreverses: false)) {
                 rotation = 360
             }
         }
+    }
+}
+
+struct GodsPageView_Previews: PreviewProvider {
+    static var previews: some View {
+        GodsPageView()
     }
 }

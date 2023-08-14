@@ -48,14 +48,14 @@ struct BookView: View {
     }
     
     private func endedDragGestureWith(_ value: CGFloat) {
-        if value > 0.25 {
+        if value > 0.15 {
             isBack = true
             withAnimation {
                 guard let previousPage = page.previous else { return }
                 page = previousPage
             }
         }
-        if value < 0.25 {
+        if value < 0.15 {
             isBack = false
             withAnimation {
                 guard let nextPage = page.next else { return }

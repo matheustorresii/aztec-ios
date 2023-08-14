@@ -24,6 +24,7 @@
 		FCA694182A89B48B00278908 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694172A89B48B00278908 /* Font+Extensions.swift */; };
 		FCA6941B2A89B55400278908 /* GodsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6941A2A89B55400278908 /* GodsPageView.swift */; };
 		FCA6941E2A89C25F00278908 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCA694202A89C25F00278908 /* Localizable.strings */; };
+		FCA694252A89CC5B00278908 /* HerdPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694242A89CC5B00278908 /* HerdPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		FCA694212A89C29000278908 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FCA694222A89C2FE00278908 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FCA694232A89C30300278908 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FCA694242A89CC5B00278908 /* HerdPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerdPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				FCA6941A2A89B55400278908 /* GodsPageView.swift */,
+				FCA694242A89CC5B00278908 /* HerdPageView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				FCA694182A89B48B00278908 /* Font+Extensions.swift in Sources */,
 				FCA693FF2A8966F800278908 /* QuizView.swift in Sources */,
 				FCA6940A2A898C0F00278908 /* Collection+Extensions.swift in Sources */,
+				FCA694252A89CC5B00278908 /* HerdPageView.swift in Sources */,
 				FCA694122A89B0C700278908 /* PageView.swift in Sources */,
 				FCA693F82A89642F00278908 /* HomeView.swift in Sources */,
 				FCA693F12A886F2E00278908 /* AppCoordinator.swift in Sources */,
