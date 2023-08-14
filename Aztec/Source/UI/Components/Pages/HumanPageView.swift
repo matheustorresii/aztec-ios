@@ -81,7 +81,7 @@ struct HumanPageView: View {
     }
 }
 
-fileprivate struct HumanPageView_Previews: PreviewProvider {
+struct HumanPageView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader.init { geometry in
             let rect = geometry.frame(in: .local)

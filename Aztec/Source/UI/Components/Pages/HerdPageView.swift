@@ -61,7 +61,7 @@ struct HerdPageView: View {
     }
 }
 
-fileprivate struct HerdPageView_Previews: PreviewProvider {
+struct HerdPageView_Previews: PreviewProvider {
     static var previews: some View {
         HerdPageView()
     }
