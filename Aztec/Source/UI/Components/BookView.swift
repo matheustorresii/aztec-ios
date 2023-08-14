@@ -29,12 +29,10 @@ struct BookView: View {
     @ViewBuilder
     private func buildPage() -> some View {
         switch page {
-        case .first:
-            PageView()
+        case .first, .third:
+            PageView(page: page)
         case .second:
-            Rectangle().fill(.green)
-        case .third:
-            Rectangle().fill(.blue)
+            PageView(page: page)
         }
     }
     
