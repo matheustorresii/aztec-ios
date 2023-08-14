@@ -12,10 +12,11 @@ enum FlowNavigationStyle {
     case pop
 }
 
-enum FlowRoute: String, Hashable {
-    case home = "HOME"
-    case quiz = "QUIZ"
-    case settings = "SETTINGS"
+enum FlowRoute: Hashable {
+    case home
+    case quizList
+    case quiz(quiz: String)
+    case settings
     
     static var defaultRoute: FlowRoute {
         return .home

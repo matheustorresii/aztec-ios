@@ -30,36 +30,54 @@ struct HeaderView: View {
         }
     
     var body: some View {
-        HStack {
-            if let leftLabel, let leftAction {
-                Button {
-                    leftAction()
-                } label: {
-                    Text(leftLabel)
-                        .font(.pressStart(size: 28))
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.primary)
-                }
-            }
-            if let title {
+        VStack {
+            HStack {
+                buildLeftButton()
+                buildTitle()
                 Spacer()
-                Text(title)
-                    .font(.pressStart(size: 20))
-                    .multilineTextAlignment(.center)
+                buildRightButton()
             }
+            .padding(.all, 16)
+            
+            Color.black.frame(height: 2)
+        }
+    }
+    
+    @ViewBuilder
+    private func buildTitle() -> some View {
+        if let title {
             Spacer()
-            if let rightLabel, let rightAction {
-                Button {
-                    rightAction()
-                } label: {
-                    Text(rightLabel)
-                        .font(.pressStart(size: 28))
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.primary)
-                }
+            Text(title)
+                .font(.pressStart(size: 28))
+                .multilineTextAlignment(.center)
+        }
+    }
+    
+    @ViewBuilder
+    private func buildLeftButton() -> some View {
+        if let leftLabel, let leftAction {
+            Button {
+                leftAction()
+            } label: {
+                Text(leftLabel)
+                    .font(.pressStart(size: 28))
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.primary)
             }
         }
-        .padding(.horizontal, 16)
-        .padding(.top, 24)
+    }
+    
+    @ViewBuilder
+    private func buildRightButton() -> some View {
+        if let rightLabel, let rightAction {
+            Button {
+                rightAction()
+            } label: {
+                Text(rightLabel)
+                    .font(.pressStart(size: 28))
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.primary)
+            }
+        }
     }
 }

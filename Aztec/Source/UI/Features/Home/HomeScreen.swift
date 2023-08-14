@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  HomeScreen.swift
 //  Aztec
 //
 //  Created by Matheus Torres on 13/08/23.
@@ -8,13 +8,13 @@
 import Combine
 import SwiftUI
 
-struct HomeView: View, NavigableView {
+struct HomeScreen: View, NavigableView {
     var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HeaderView(leftLabel: "?", rightLabel: "Ξ") {
-                navigation.send(.push(.quiz))
+                navigation.send(.push(.quizList))
             } rightAction: {
                 navigation.send(.push(.settings))
             }

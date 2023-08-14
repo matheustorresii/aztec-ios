@@ -1,5 +1,5 @@
 //
-//  SettingsView.swift
+//  SettingsScreen.swift
 //  Aztec
 //
 //  Created by Matheus Torres on 14/08/23.
@@ -8,11 +8,11 @@
 import Combine
 import SwiftUI
 
-struct SettingsView: View, NavigableView {
+struct SettingsScreen: View, NavigableView {
     var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HeaderView(title: "Settings", leftLabel: "<", leftAction: {
                 navigation.send(.pop)
             })

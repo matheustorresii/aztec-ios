@@ -38,20 +38,16 @@ final class AppCoordinator: ObservableObject {
         var view: any NavigableView
         switch route {
         case .home:
-            view = HomeView()
+            view = HomeScreen()
         case .quiz:
-            view = QuizView()
+            view = QuizScreen()
+        case .quizList:
+            view = QuizListScreen()
         case .settings:
-            view = SettingsView()
+            view = SettingsScreen()
         }
         bind(view: view)
         return view
-    }
-    
-    private func start() -> some View {
-        let homeView = HomeView()
-        bind(view: homeView)
-        return homeView
     }
     
     private func navigate(_ style: FlowNavigationStyle) {

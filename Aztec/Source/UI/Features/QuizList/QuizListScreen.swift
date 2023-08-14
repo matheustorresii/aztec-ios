@@ -1,21 +1,22 @@
 //
-//  QuizView.swift
+//  QuizListScreen.swift
 //  Aztec
 //
-//  Created by Matheus Torres on 13/08/23.
+//  Created by Matheus Torres on 14/08/23.
 //
 
 import Combine
 import SwiftUI
 
-struct QuizView: View, NavigableView {
+struct QuizListScreen: View, NavigableView {
     var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             HeaderView(title: "Quiz", leftLabel: "<", leftAction: {
                 navigation.send(.pop)
             })
+            QuizListView()
         }
     }
 }
