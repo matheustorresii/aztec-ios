@@ -39,8 +39,8 @@ final class AppCoordinator: ObservableObject {
         switch route {
         case .home:
             view = HomeScreen()
-        case .quiz:
-            view = QuizScreen()
+        case .quiz(let quiz):
+            view = QuizScreen(quiz: quiz)
         case .quizList:
             view = QuizListScreen()
         case .settings:

@@ -48,7 +48,7 @@ struct HeaderView: View {
         if let title {
             Spacer()
             Text(title)
-                .font(.pressStart(size: 28))
+                .font(.pressStart(size: 26))
                 .multilineTextAlignment(.center)
         }
     }

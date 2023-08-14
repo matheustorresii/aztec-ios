@@ -13,10 +13,12 @@ struct QuizListScreen: View, NavigableView {
     
     var body: some View {
         VStack(spacing: 0) {
-            HeaderView(title: "Quiz", leftLabel: "<", leftAction: {
+            HeaderView(title: "Quizzes", leftLabel: "<", leftAction: {
                 navigation.send(.pop)
             })
-            QuizListView()
+            QuizListView { quiz in
+                navigation.send(.push(.quiz(quiz)))
+            }
         }
     }
 }

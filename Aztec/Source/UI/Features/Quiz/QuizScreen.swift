@@ -9,11 +9,12 @@ import Combine
 import SwiftUI
 
 struct QuizScreen: View, NavigableView {
+    var quiz: Quiz
     var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
     
     var body: some View {
         VStack(spacing: 0) {
-            HeaderView(title: "Quiz", leftLabel: "<", leftAction: {
+            HeaderView(title: quiz.title, leftLabel: "<", leftAction: {
                 navigation.send(.pop)
             })
         }
