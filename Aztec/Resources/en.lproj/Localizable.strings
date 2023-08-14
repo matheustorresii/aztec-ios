@@ -6,6 +6,16 @@
   
 */
 
+// TITLE
+
+"title.settings" = "Settings";
+"title.quiz" = "Quiz";
+
+// SETTINGS
+
+"settings.darkTheme" = "Dark theme";
+"settings.autoSpeech" = "Auto speech";
+
 // PAGES
 
 "pages.beginning.top" = "A long time ago, Ōmeteōtl, the dual god, had four children.";

@@ -16,7 +16,7 @@ struct SettingsScreen: View, NavigableView {
     
     var body: some View {
         VStack(spacing: 0) {
-            HeaderView(title: "Settings", leftLabel: "<", leftAction: {
+            HeaderView(title: "title.quiz".localized(), leftLabel: "<", leftAction: {
                 navigation.send(.pop)
             })
             
@@ -24,11 +24,11 @@ struct SettingsScreen: View, NavigableView {
                 VStack(spacing: 16) {
                     Spacer().frame(height: 16)
                     SettingsCellView(id: Constants.AppStorage.darkTheme.rawValue,
-                                     text: "Dark Theme",
+                                     text: "settings.darkTheme".localized(),
                                      initialState: darkTheme,
                                      didTapSwitchWithId: didTapSwitchWith(id:))
                     SettingsCellView(id: Constants.AppStorage.autoSpeech.rawValue,
-                                     text: "Auto speech",
+                                     text: "settings.autoSpeech".localized(),
                                      initialState: autoSpeech,
                                      didTapSwitchWithId: didTapSwitchWith(id:))
                 }

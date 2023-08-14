@@ -6,6 +6,16 @@
   
 */
 
+// TITLE
+
+"title.settings" = "Ajustes";
+"title.quiz" = "Quiz";
+
+// SETTINGS
+
+"settings.darkTheme" = "Tema escuro";
+"settings.autoSpeech" = "Fala automática";
+
 // PAGES
 
 "pages.beginning.top" = "Há muito tempo, Ōmeteōtl, o deus duplo, teve quatro filhos.";

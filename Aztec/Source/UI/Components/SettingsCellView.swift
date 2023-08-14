@@ -16,7 +16,7 @@ struct SettingsCellView: View {
     var body: some View {
         HStack {
             Text(LocalizedStringKey(text))
-                .font(.pressStart(size: 18))
+                .font(.pressStart(size: 16))
                 .padding(.horizontal, 16)
                 .zIndex(2)
             

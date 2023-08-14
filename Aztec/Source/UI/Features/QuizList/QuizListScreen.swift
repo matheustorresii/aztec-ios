@@ -13,7 +13,7 @@ struct QuizListScreen: View, NavigableView {
     
     var body: some View {
         VStack(spacing: 0) {
-            HeaderView(title: "Quizzes", leftLabel: "<", leftAction: {
+            HeaderView(title: "title.quiz".localized(), leftLabel: "<", leftAction: {
                 navigation.send(.pop)
             })
             

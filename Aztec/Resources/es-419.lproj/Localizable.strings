@@ -6,6 +6,16 @@
   
 */
 
+// TITLE
+
+"title.settings" = "Ajustes";
+"title.quiz" = "Quiz";
+
+// SETTINGS
+
+"settings.darkTheme" = "Tema Oscuro";
+"settings.autoSpeech" = "Voz automática";
+
 // PAGES
 
 "pages.beginning.top" = "Hace mucho tiempo, Ōmeteōtl, el dios dual, tuvo cuatro hijos.";
