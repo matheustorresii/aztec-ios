@@ -37,6 +37,8 @@
 		FCA694392A89EAC600278908 /* HumanPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694382A89EAC600278908 /* HumanPageView.swift */; };
 		FCA6943B2A89EADC00278908 /* FifthSunPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6943A2A89EADC00278908 /* FifthSunPageView.swift */; };
 		FCA6943F2A89FE3300278908 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6943E2A89FE3300278908 /* View+Extensions.swift */; };
+		FCA694422A8A06FB00278908 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = FCA694402A8A06FB00278908 /* Rain.sks */; };
+		FCA694432A8A06FB00278908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA694412A8A06FB00278908 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		FCA694382A89EAC600278908 /* HumanPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanPageView.swift; sourceTree = "<group>"; };
 		FCA6943A2A89EADC00278908 /* FifthSunPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthSunPageView.swift; sourceTree = "<group>"; };
 		FCA6943E2A89FE3300278908 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		FCA694402A8A06FB00278908 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
+		FCA694412A8A06FB00278908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 			children = (
 				FCA694142A89B42800278908 /* PressStart2P-Regular.ttf */,
 				FCA694202A89C25F00278908 /* Localizable.strings */,
+				FCA694402A8A06FB00278908 /* Rain.sks */,
+				FCA694412A8A06FB00278908 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -318,6 +324,8 @@
 				FCA694152A89B42800278908 /* PressStart2P-Regular.ttf in Resources */,
 				FCA6941E2A89C25F00278908 /* Localizable.strings in Resources */,
 				FC1C0FD12A8206F10075AB92 /* Preview Assets.xcassets in Resources */,
+				FCA694422A8A06FB00278908 /* Rain.sks in Resources */,
+				FCA694432A8A06FB00278908 /* Assets.xcassets in Resources */,
 				FC1C0FCE2A8206F10075AB92 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
