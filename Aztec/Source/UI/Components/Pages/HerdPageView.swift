@@ -9,9 +9,9 @@ import SwiftUI
 
 struct HerdPageView: View {
     
-    @State var paged = false
+    @State private var paged = false
     
-    let timer = Timer.publish(every: 0.75, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 0.75, on: .main, in: .common).autoconnect()
     
     var body: some View {
         GeometryReader { geometry in
@@ -61,7 +61,7 @@ struct HerdPageView: View {
     }
 }
 
-struct HerdPageView_Previews: PreviewProvider {
+fileprivate struct HerdPageView_Previews: PreviewProvider {
     static var previews: some View {
         HerdPageView()
     }

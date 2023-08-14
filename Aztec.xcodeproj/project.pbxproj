@@ -36,6 +36,7 @@
 		FCA694372A89EABE00278908 /* MoonPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694362A89EABE00278908 /* MoonPageView.swift */; };
 		FCA694392A89EAC600278908 /* HumanPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694382A89EAC600278908 /* HumanPageView.swift */; };
 		FCA6943B2A89EADC00278908 /* FifthSunPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6943A2A89EADC00278908 /* FifthSunPageView.swift */; };
+		FCA6943F2A89FE3300278908 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6943E2A89FE3300278908 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		FCA694362A89EABE00278908 /* MoonPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPageView.swift; sourceTree = "<group>"; };
 		FCA694382A89EAC600278908 /* HumanPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanPageView.swift; sourceTree = "<group>"; };
 		FCA6943A2A89EADC00278908 /* FifthSunPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthSunPageView.swift; sourceTree = "<group>"; };
+		FCA6943E2A89FE3300278908 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			children = (
 				FCA694092A898C0F00278908 /* Collection+Extensions.swift */,
 				FCA694172A89B48B00278908 /* Font+Extensions.swift */,
+				FCA6943E2A89FE3300278908 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCA6940C2A89946D00278908 /* BookView.swift in Sources */,
+				FCA6943F2A89FE3300278908 /* View+Extensions.swift in Sources */,
 				FCA693FA2A8964B400278908 /* NavigableView.swift in Sources */,
 				FCA6941B2A89B55400278908 /* GodsPageView.swift in Sources */,
 				FCA694102A89ACA100278908 /* Pages.swift in Sources */,

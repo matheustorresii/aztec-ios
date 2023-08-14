@@ -48,7 +48,7 @@ struct GodsPageView: View {
     }
 }
 
-struct GodsPageView_Previews: PreviewProvider {
+fileprivate struct GodsPageView_Previews: PreviewProvider {
     static var previews: some View {
         GodsPageView()
     }

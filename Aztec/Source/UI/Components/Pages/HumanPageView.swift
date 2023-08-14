@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct HumanPageView: View {
-    @State var reset: Bool = true
-    @State var start: CGFloat = .zero
-    @State var end: CGFloat = .zero
+    @State private var reset: Bool = true
+    @State private var start: CGFloat = .zero
+    @State private var end: CGFloat = .zero
     
-    struct BloodShape: Shape {
+    private struct BloodShape: Shape {
         func path(in rect: CGRect) -> Path {
             var path = Path()
             path.move(to: .init(x: rect.midX, y: rect.minY))
