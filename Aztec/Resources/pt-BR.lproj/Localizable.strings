@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  Aztec
+
+  Created by Matheus Torres on 13/08/23.
+  
+*/
+
+// PAGES
+
+"pages.beggining.top" = "Há muito tempo, Ōmeteōtl, o deus duplo, teve quatro filhos.";
+
+"pages.gods.top" = "Eles eram Xipe Totec, Tezcatlipoca, Quetzalcóatl e Huitzilopochtli.";
+
+"pages.firstSun.top" = "Durante essa era, havia fortes gigantes vivendo na Terra, mas eles precisavam de um Sol.";
+"pages.firstSun.bottom" = "O Primeiro Sol foi Tezcatlipoca, e seu reinado como o primeiro deus sol é conhecido como Sol-Onça.";
+
+"pages.herd.top" = "Mas Quetzalcóatl destronou Tezcatlipoca para assumir seu lugar como deus do Sol.";
+"pages.herd.bottom" = "Derrotado, Tezcatlipoca se transformou em uma onça e se uniu a outras onças para comer todos os gigantes.";
+
+"pages.secondSun.top" = "O Segundo Sol foi Quetzalcóatl, sua era foi chamada de Sol-Vento, e a Terra foi povoada por humanos que comiam apenas nozes.";
+"pages.secondSun.bottom" = "Mas Tezcatlipoca queria se vingar de Quetzalcóatl e, na forma de uma onça, derrubou seu irmão do céu.";
+
+"pages.hurricane.top" = "Essa era chegou ao fim através de furacões catastróficos, e os poucos sobreviventes fugiram para o topo das árvores e foram transformados em macacos.";
+
+"pages.thirdSun.top" = "Tlaloc foi coroado o Terceiro Sol, também conhecido como Sol-Chuva, a Terra era dominada pela água e os humanos criados apenas comiam sementes que cresciam na água.";
+
+"pages.drought.top" = "No entanto, Tezcatlipoca seduziu o grande amor da sua vida, Xōchiquetzal, depois disso, Tlaloc ficou tão consumido pela própria tristeza que se recusou a cumprir seus deveres como o Sol, e uma grande seca se seguiu.";
+"pages.drought.bottom" = "Tlaloc ficou cada vez mais irritado com as orações das pessoas e desencadeou uma chuva de fogo sobre a Terra, e esse foi o fim do Terceiro Sol.";
+
+"pages.fourthSun.top" = "O Quarto Sol foi a nova esposa de Tlaloc, Chalchiuhtlicue, que reinou durante a era do Sol da Água.";
+"pages.fourthSun.bottom" = "Uma nova raça de pessoas que comia apenas milho foi criada, e Chalchiuhtlicue amava o seu povo.";
+
+"pages.flood.top" = "No entanto, Tezcatlipoca disse à deusa da água que ela estava fingindo seu amor para ganhar sua confiança, ela ficou tão arrasada por essas palavras que chorou pelos próximos 52 anos.";
+"pages.flood.bottom" = "Uma enchente horrível afogou todos na Terra, e os humanos foram forçados a se tornarem peixes para sobreviver, esse foi o fim do Quarto Sol.";
+
+"pages.moon.top" = "Os deuses se reuniram para decidir quem se sacrificaria para se tornar o Quinto Sol, eles escolheram dois deuses: Nanauatl, um deus humilde e humilde, e Tecciztecatl, um deus rico e poderoso, que tentou quatro vezes pular na fogueira, mas temia o calor intenso das chamas.";
+"pages.moon.bottom" = "Finalmente, Nanauatl pulou, seguido pelo envergonhado Tecciztecatl, Nanauatl se tornou o verdadeiro Sol, recebendo um novo nome, Tonatiuh, preocupados com o segundo sol, os outros deuses lançaram um coelho em Tecciztecatl, transformando-o na Lua.";
+
+"pages.humans.top" = "Enquanto isso, Quetzalcóatl não aceitava a destruição de seu povo e foi ao submundo, roubou os ossos dos que vieram antes e os mergulhou em seu próprio sangue.";
+"pages.humans.bottom" = "As pessoas ofereciam seu próprio sangue para agradar Quetzalcóatl e agradecê-lo por sacrificar seu próprio sangue, e para agradar Tonatiuh, que se recusaria a se mover se não oferecessem sacrifícios suficientes.";
+
+"pages.fifthSun.bottom" = "Atualmente, estamos vivendo no Quinto Sol, este é o tempo que conhecemos e experimentamos, de acordo com a profecia, ele terminará com um grande terremoto.";

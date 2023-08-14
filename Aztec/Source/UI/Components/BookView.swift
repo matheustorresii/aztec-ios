@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BookView: View {
     
-    @State private var page: Pages = .first
+    @State private var page: Pages = .beggining
     @State private var isBack: Bool = false
     
     var body: some View {
@@ -29,9 +29,20 @@ struct BookView: View {
     @ViewBuilder
     private func buildPage() -> some View {
         switch page {
-        case .first, .third:
+        case .beggining,
+                .firstSun,
+                .secondSun,
+                .thirdSun,
+                .fourthSun,
+                .moon,
+                .fifthSun:
             PageView(page: page)
-        case .second:
+        case .gods,
+                .herd,
+                .hurricane,
+                .drought,
+                .flood,
+                .humans:
             PageView(page: page)
         }
     }
