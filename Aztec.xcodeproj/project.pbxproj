@@ -16,6 +16,9 @@
 		FCA693FA2A8964B400278908 /* NavigableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693F92A8964B400278908 /* NavigableView.swift */; };
 		FCA693FC2A8964BF00278908 /* FlowRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693FB2A8964BF00278908 /* FlowRoute.swift */; };
 		FCA693FF2A8966F800278908 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693FE2A8966F800278908 /* QuizView.swift */; };
+		FCA6940A2A898C0F00278908 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694092A898C0F00278908 /* Collection+Extensions.swift */; };
+		FCA6940C2A89946D00278908 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6940B2A89946D00278908 /* BookView.swift */; };
+		FCA694102A89ACA100278908 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6940F2A89ACA100278908 /* Pages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		FCA693F92A8964B400278908 /* NavigableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigableView.swift; sourceTree = "<group>"; };
 		FCA693FB2A8964BF00278908 /* FlowRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowRoute.swift; sourceTree = "<group>"; };
 		FCA693FE2A8966F800278908 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		FCA694092A898C0F00278908 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		FCA6940B2A89946D00278908 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		FCA6940F2A89ACA100278908 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +86,10 @@
 		FCA693E32A886E0C00278908 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FCA6940D2A89AC8E00278908 /* Domain */,
 				FCA693EF2A886F2700278908 /* Navigation */,
 				FCA693F42A89642200278908 /* UI */,
+				FCA694072A898BCC00278908 /* Utils */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -100,6 +108,7 @@
 		FCA693F42A89642200278908 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FCA694062A897A9900278908 /* Components */,
 				FCA693F52A89642500278908 /* Features */,
 			);
 			path = UI;
@@ -128,6 +137,46 @@
 				FCA693FE2A8966F800278908 /* QuizView.swift */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		FCA694062A897A9900278908 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FCA6940B2A89946D00278908 /* BookView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FCA694072A898BCC00278908 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCA694082A898C0100278908 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FCA694082A898C0100278908 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCA694092A898C0F00278908 /* Collection+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCA6940D2A89AC8E00278908 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FCA6940E2A89AC9400278908 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FCA6940E2A89AC9400278908 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCA6940F2A89ACA100278908 /* Pages.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,11 +249,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA6940C2A89946D00278908 /* BookView.swift in Sources */,
 				FCA693FA2A8964B400278908 /* NavigableView.swift in Sources */,
+				FCA694102A89ACA100278908 /* Pages.swift in Sources */,
 				FCA693F32A89636C00278908 /* FlowView.swift in Sources */,
 				FCA693FC2A8964BF00278908 /* FlowRoute.swift in Sources */,
 				FC1C0FCA2A8206EF0075AB92 /* AztecApp.swift in Sources */,
 				FCA693FF2A8966F800278908 /* QuizView.swift in Sources */,
+				FCA6940A2A898C0F00278908 /* Collection+Extensions.swift in Sources */,
 				FCA693F82A89642F00278908 /* HomeView.swift in Sources */,
 				FCA693F12A886F2E00278908 /* AppCoordinator.swift in Sources */,
 			);
@@ -343,6 +395,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,6 +425,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

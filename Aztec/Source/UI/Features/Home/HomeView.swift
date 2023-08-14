@@ -12,11 +12,8 @@ struct HomeView: View, NavigableView {
     var navigate: PassthroughSubject<FlowNavigationStyle, Never> = .init()
     
     var body: some View {
-        Text("This is home")
-        Button {
-            navigate.send(.push(.quiz))
-        } label: {
-            Text("Go to quiz")
+        ZStack {
+            BookView()
         }
     }
 }
