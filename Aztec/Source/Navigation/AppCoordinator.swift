@@ -41,6 +41,8 @@ final class AppCoordinator: ObservableObject {
             view = HomeView()
         case .quiz:
             view = QuizView()
+        case .settings:
+            view = SettingsView()
         }
         bind(view: view)
         return view
@@ -62,7 +64,7 @@ final class AppCoordinator: ObservableObject {
     }
     
     private func bind(view: any NavigableView) {
-        view.navigate
+        view.navigation
             .receive(on: DispatchQueue.main)
             .sink { [weak self] navigation in
                 self?.navigate(navigation)

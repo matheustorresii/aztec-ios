@@ -15,7 +15,6 @@ struct BookView: View {
     var body: some View {
         GeometryReader { geometry in
             buildPage()
-                .position(x: geometry.frame(in: .local).midX, y: geometry.frame(in: .local).midY)
                 .transition(.asymmetric(
                     insertion: .move(edge: isBack ? .leading : .trailing),
                     removal: .move(edge: isBack ? .trailing : .leading)))

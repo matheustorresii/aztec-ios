@@ -15,6 +15,7 @@ enum FlowNavigationStyle {
 enum FlowRoute: String, Hashable {
     case home = "HOME"
     case quiz = "QUIZ"
+    case settings = "SETTINGS"
     
     static var defaultRoute: FlowRoute {
         return .home

@@ -32,6 +32,7 @@ struct MoonPageView: View {
                     }
                 }
         }
+        .padding(.vertical, -20)
         .rotationEffect(.degrees(sunRotation), anchor: .center)
         .onAppear {
             withAnimation(.linear(duration: 20).repeatForever(autoreverses: false)) {

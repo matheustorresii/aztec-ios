@@ -12,6 +12,8 @@ struct PageView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 24) {
+            Spacer()
+            
             if let topText = page.topText {
                 buildText(topText)
             }
@@ -22,14 +24,15 @@ struct PageView: View {
             if let bottomText = page.bottomText {
                 buildText(bottomText)
             }
+            
+            Spacer()
         }
+        .contentShape(Rectangle())
     }
     
     @ViewBuilder
     private func buildAnimation() -> some View {
         switch page {
-        case .beginning:
-            BeginningPageView()
         case .gods:
             GodsPageView()
         case .firstSun:
@@ -54,6 +57,8 @@ struct PageView: View {
             HumanPageView()
         case .fifthSun:
             FifthSunPageView()
+        default:
+            Text(String.empty)
         }
     }
     

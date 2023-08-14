@@ -26,7 +26,6 @@
 		FCA6941E2A89C25F00278908 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCA694202A89C25F00278908 /* Localizable.strings */; };
 		FCA694252A89CC5B00278908 /* HerdPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694242A89CC5B00278908 /* HerdPageView.swift */; };
 		FCA694272A89EA3600278908 /* FirstSunPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694262A89EA3600278908 /* FirstSunPageView.swift */; };
-		FCA694292A89EA7600278908 /* BeginningPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694282A89EA7600278908 /* BeginningPageView.swift */; };
 		FCA6942B2A89EA8600278908 /* SecondSunPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6942A2A89EA8600278908 /* SecondSunPageView.swift */; };
 		FCA6942D2A89EA9500278908 /* HurricanePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6942C2A89EA9500278908 /* HurricanePageView.swift */; };
 		FCA6942F2A89EA9D00278908 /* ThirdSunPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6942E2A89EA9D00278908 /* ThirdSunPageView.swift */; };
@@ -39,6 +38,9 @@
 		FCA6943F2A89FE3300278908 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6943E2A89FE3300278908 /* View+Extensions.swift */; };
 		FCA694422A8A06FB00278908 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = FCA694402A8A06FB00278908 /* Rain.sks */; };
 		FCA694432A8A06FB00278908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA694412A8A06FB00278908 /* Assets.xcassets */; };
+		FCA694452A8A187A00278908 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694442A8A187A00278908 /* String+Extensions.swift */; };
+		FCA6944A2A8A29A000278908 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694492A8A29A000278908 /* SettingsView.swift */; };
+		FCA6944C2A8A2B0A00278908 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6944B2A8A2B0A00278908 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +68,6 @@
 		FCA694232A89C30300278908 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FCA694242A89CC5B00278908 /* HerdPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HerdPageView.swift; sourceTree = "<group>"; };
 		FCA694262A89EA3600278908 /* FirstSunPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSunPageView.swift; sourceTree = "<group>"; };
-		FCA694282A89EA7600278908 /* BeginningPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningPageView.swift; sourceTree = "<group>"; };
 		FCA6942A2A89EA8600278908 /* SecondSunPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSunPageView.swift; sourceTree = "<group>"; };
 		FCA6942C2A89EA9500278908 /* HurricanePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurricanePageView.swift; sourceTree = "<group>"; };
 		FCA6942E2A89EA9D00278908 /* ThirdSunPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdSunPageView.swift; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		FCA6943E2A89FE3300278908 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		FCA694402A8A06FB00278908 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
 		FCA694412A8A06FB00278908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCA694442A8A187A00278908 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		FCA694492A8A29A000278908 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FCA6944B2A8A2B0A00278908 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 			children = (
 				FCA693F62A89642600278908 /* Home */,
 				FCA693FD2A89663F00278908 /* Quiz */,
+				FCA694482A8A299500278908 /* Settings */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			children = (
 				FCA694192A89B52D00278908 /* Pages */,
 				FCA6940B2A89946D00278908 /* BookView.swift */,
+				FCA6944B2A8A2B0A00278908 /* HeaderView.swift */,
 				FCA694112A89B0C700278908 /* PageView.swift */,
 			);
 			path = Components;
@@ -208,6 +214,7 @@
 			children = (
 				FCA694092A898C0F00278908 /* Collection+Extensions.swift */,
 				FCA694172A89B48B00278908 /* Font+Extensions.swift */,
+				FCA694442A8A187A00278908 /* String+Extensions.swift */,
 				FCA6943E2A89FE3300278908 /* View+Extensions.swift */,
 			);
 			path = Extensions;
@@ -243,7 +250,6 @@
 		FCA694192A89B52D00278908 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				FCA694282A89EA7600278908 /* BeginningPageView.swift */,
 				FCA694302A89EAA600278908 /* DroughtPageView.swift */,
 				FCA6943A2A89EADC00278908 /* FifthSunPageView.swift */,
 				FCA694262A89EA3600278908 /* FirstSunPageView.swift */,
@@ -258,6 +264,14 @@
 				FCA6942E2A89EA9D00278908 /* ThirdSunPageView.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		FCA694482A8A299500278908 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FCA694492A8A29A000278908 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,18 +365,20 @@
 				FCA6942D2A89EA9500278908 /* HurricanePageView.swift in Sources */,
 				FCA6940A2A898C0F00278908 /* Collection+Extensions.swift in Sources */,
 				FCA694252A89CC5B00278908 /* HerdPageView.swift in Sources */,
+				FCA694452A8A187A00278908 /* String+Extensions.swift in Sources */,
 				FCA6942F2A89EA9D00278908 /* ThirdSunPageView.swift in Sources */,
 				FCA694312A89EAA600278908 /* DroughtPageView.swift in Sources */,
 				FCA694392A89EAC600278908 /* HumanPageView.swift in Sources */,
-				FCA694292A89EA7600278908 /* BeginningPageView.swift in Sources */,
 				FCA6942B2A89EA8600278908 /* SecondSunPageView.swift in Sources */,
 				FCA694122A89B0C700278908 /* PageView.swift in Sources */,
 				FCA694352A89EAB700278908 /* FloodPageView.swift in Sources */,
+				FCA6944A2A8A29A000278908 /* SettingsView.swift in Sources */,
 				FCA694372A89EABE00278908 /* MoonPageView.swift in Sources */,
 				FCA6943B2A89EADC00278908 /* FifthSunPageView.swift in Sources */,
 				FCA694272A89EA3600278908 /* FirstSunPageView.swift in Sources */,
 				FCA693F82A89642F00278908 /* HomeView.swift in Sources */,
 				FCA693F12A886F2E00278908 /* AppCoordinator.swift in Sources */,
+				FCA6944C2A8A2B0A00278908 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

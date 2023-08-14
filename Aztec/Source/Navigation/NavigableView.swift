@@ -9,5 +9,5 @@ import Combine
 import SwiftUI
 
 protocol NavigableView: View {
-    var navigate: PassthroughSubject<FlowNavigationStyle, Never> { get }
+    var navigation: PassthroughSubject<FlowNavigationStyle, Never> { get }
 }

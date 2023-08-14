@@ -9,10 +9,16 @@ import Combine
 import SwiftUI
 
 struct HomeView: View, NavigableView {
-    var navigate: PassthroughSubject<FlowNavigationStyle, Never> = .init()
+    var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
     
     var body: some View {
-        ZStack {
+        VStack {
+            HeaderView(leftLabel: "?", rightLabel: "Ξ") {
+                navigation.send(.push(.quiz))
+            } rightAction: {
+                navigation.send(.push(.settings))
+            }
+            
             BookView()
         }
     }
