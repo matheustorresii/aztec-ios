@@ -19,6 +19,9 @@
 		FCA6940A2A898C0F00278908 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694092A898C0F00278908 /* Collection+Extensions.swift */; };
 		FCA6940C2A89946D00278908 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6940B2A89946D00278908 /* BookView.swift */; };
 		FCA694102A89ACA100278908 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6940F2A89ACA100278908 /* Pages.swift */; };
+		FCA694122A89B0C700278908 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694112A89B0C700278908 /* PageView.swift */; };
+		FCA694152A89B42800278908 /* PressStart2P-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCA694142A89B42800278908 /* PressStart2P-Regular.ttf */; };
+		FCA694182A89B48B00278908 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694172A89B48B00278908 /* Font+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,10 @@
 		FCA694092A898C0F00278908 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		FCA6940B2A89946D00278908 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		FCA6940F2A89ACA100278908 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		FCA694112A89B0C700278908 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		FCA694142A89B42800278908 /* PressStart2P-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PressStart2P-Regular.ttf"; sourceTree = "<group>"; };
+		FCA694162A89B44A00278908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FCA694172A89B48B00278908 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +74,8 @@
 		FC1C0FC82A8206EF0075AB92 /* Aztec */ = {
 			isa = PBXGroup;
 			children = (
+				FCA694162A89B44A00278908 /* Info.plist */,
+				FCA694132A89B40100278908 /* Resources */,
 				FCA693E32A886E0C00278908 /* Source */,
 				FC1C0FC92A8206EF0075AB92 /* AztecApp.swift */,
 				FC1C0FCD2A8206F10075AB92 /* Assets.xcassets */,
@@ -143,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FCA6940B2A89946D00278908 /* BookView.swift */,
+				FCA694112A89B0C700278908 /* PageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -159,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				FCA694092A898C0F00278908 /* Collection+Extensions.swift */,
+				FCA694172A89B48B00278908 /* Font+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,6 +188,14 @@
 				FCA6940F2A89ACA100278908 /* Pages.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FCA694132A89B40100278908 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCA694142A89B42800278908 /* PressStart2P-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCA694152A89B42800278908 /* PressStart2P-Regular.ttf in Resources */,
 				FC1C0FD12A8206F10075AB92 /* Preview Assets.xcassets in Resources */,
 				FC1C0FCE2A8206F10075AB92 /* Assets.xcassets in Resources */,
 			);
@@ -255,8 +275,10 @@
 				FCA693F32A89636C00278908 /* FlowView.swift in Sources */,
 				FCA693FC2A8964BF00278908 /* FlowRoute.swift in Sources */,
 				FC1C0FCA2A8206EF0075AB92 /* AztecApp.swift in Sources */,
+				FCA694182A89B48B00278908 /* Font+Extensions.swift in Sources */,
 				FCA693FF2A8966F800278908 /* QuizView.swift in Sources */,
 				FCA6940A2A898C0F00278908 /* Collection+Extensions.swift in Sources */,
+				FCA694122A89B0C700278908 /* PageView.swift in Sources */,
 				FCA693F82A89642F00278908 /* HomeView.swift in Sources */,
 				FCA693F12A886F2E00278908 /* AppCoordinator.swift in Sources */,
 			);
@@ -390,6 +412,7 @@
 				DEVELOPMENT_TEAM = 7Q7P4QSJ2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aztec/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -420,6 +443,7 @@
 				DEVELOPMENT_TEAM = 7Q7P4QSJ2J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aztec/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
