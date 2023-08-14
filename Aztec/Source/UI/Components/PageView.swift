@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PageView: View {
     let page: Pages
+    let didAppearWithText: ((String) -> ())?
     
     var body: some View {
         VStack(alignment: .center, spacing: 24) {
@@ -27,6 +28,25 @@ struct PageView: View {
             Spacer()
         }
         .contentShape(Rectangle())
+        .onAppear {
+            didAppearWithText?(buildText())
+        }
+    }
+    
+    private func buildText() -> String {
+        var fullText: String = .empty
+        
+        if let pageTopText = page.topText {
+            fullText += NSLocalizedString(pageTopText, comment: .empty)
+        }
+        
+        if let pageBottomText = page.bottomText {
+            if page.topText != nil {
+                fullText += .space
+            }
+            fullText += NSLocalizedString(pageBottomText, comment: .empty)
+        }
+        return fullText
     }
     
     @ViewBuilder

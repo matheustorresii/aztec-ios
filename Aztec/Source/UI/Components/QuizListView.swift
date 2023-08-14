@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuizListView: View {
     
-    var navigateToQuiz: (Quiz) -> ()
+    var navigateToQuiz: ((Quiz) -> ())?
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -28,6 +28,6 @@ struct QuizListView: View {
     }
     
     private func didTap(quiz: Quiz) {
-        navigateToQuiz(quiz)
+        navigateToQuiz?(quiz)
     }
 }

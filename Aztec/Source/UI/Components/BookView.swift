@@ -5,12 +5,15 @@
 //  Created by Matheus Torres on 13/08/23.
 //
 
+import AVKit
 import SwiftUI
 
 struct BookView: View {
     
     @State private var page: Pages = .beginning
     @State private var isBack: Bool = false
+    
+    private let synthesizer = AVSpeechSynthesizer()
     
     var body: some View {
         GeometryReader { geometry in
@@ -28,9 +31,9 @@ struct BookView: View {
     @ViewBuilder
     private func buildPage() -> some View {
         if page.rawValue.isMultiple(of: 2) {
-            PageView(page: page)
+            PageView(page: page) { speak($0) }
         } else {
-            PageView(page: page)
+            PageView(page: page) { speak($0) }
         }
     }
     
@@ -49,5 +52,26 @@ struct BookView: View {
                 page = nextPage
             }
         }
+    }
+    
+    private func speak(_ string: String) {
+        let utterance = AVSpeechUtterance(string: string)
+        guard let identifier = identifierForVoice() else { return }
+        utterance.voice = .init(identifier: identifier)
+        synthesizer.speak(utterance)
+    }
+    
+    private func identifierForVoice() -> String? {
+        let code = AVSpeechSynthesisVoice.currentLanguageCode()
+        if code.hasPrefix("en") {
+            return "com.apple.ttsbundle.Samantha-compact"
+        }
+        if code.hasPrefix("es") {
+            return "com.apple.ttsbundle.Paulina-compact"
+        }
+        if code.hasPrefix("pt") {
+            return "com.apple.ttsbundle.Luciana-compact"
+        }
+        return nil
     }
 }
