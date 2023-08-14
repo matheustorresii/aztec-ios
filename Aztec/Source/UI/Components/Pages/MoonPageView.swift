@@ -8,13 +8,46 @@
 import SwiftUI
 
 struct MoonPageView: View {
+    @State private var sunRotation = 0.0
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: -200) {
+            Image("sun-5")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .rotationEffect(.degrees(sunRotation), anchor: .center)
+                .onAppear {
+                    withAnimation(.linear(duration: 40).repeatForever(autoreverses: false)) {
+                        sunRotation = 360
+                    }
+                }
+            Image("moon-rabbit")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(60)
+                .rotationEffect(.degrees(sunRotation), anchor: .center)
+                .onAppear {
+                    withAnimation(.linear(duration: 40).repeatForever(autoreverses: false)) {
+                        sunRotation = 360
+                    }
+                }
+        }
+        .rotationEffect(.degrees(sunRotation), anchor: .center)
+        .onAppear {
+            withAnimation(.linear(duration: 20).repeatForever(autoreverses: false)) {
+                sunRotation = 360
+            }
+        }
     }
 }
 
 struct MoonPageView_Previews: PreviewProvider {
     static var previews: some View {
-        MoonPageView()
+        GeometryReader { geometry in
+            let rect = geometry.frame(in: .local)
+            
+            MoonPageView()
+                .frame(width: rect.width, height: rect.width)
+        }
     }
 }

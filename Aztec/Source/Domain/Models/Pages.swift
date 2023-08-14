@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Pages {
+enum Pages: Int {
     case beginning
     case gods
     case firstSun

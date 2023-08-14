@@ -36,7 +36,6 @@ struct HumanPageView: View {
             Image("human")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .padding(10)
         }
     }
     

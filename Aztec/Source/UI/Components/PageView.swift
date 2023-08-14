@@ -63,5 +63,6 @@ struct PageView: View {
             .font(.pressStart(size: 12))
             .multilineTextAlignment(.center)
             .padding(.horizontal, 16)
+            .zIndex(2)
     }
 }

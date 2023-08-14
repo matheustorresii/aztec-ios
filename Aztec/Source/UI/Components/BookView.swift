@@ -28,21 +28,9 @@ struct BookView: View {
     
     @ViewBuilder
     private func buildPage() -> some View {
-        switch page {
-        case .beginning,
-                .firstSun,
-                .secondSun,
-                .thirdSun,
-                .fourthSun,
-                .moon,
-                .fifthSun:
+        if page.rawValue.isMultiple(of: 2) {
             PageView(page: page)
-        case .gods,
-                .herd,
-                .hurricane,
-                .drought,
-                .flood,
-                .human:
+        } else {
             PageView(page: page)
         }
     }
