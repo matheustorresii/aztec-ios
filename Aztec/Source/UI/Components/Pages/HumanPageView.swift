@@ -37,6 +37,7 @@ struct HumanPageView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         }
+        .padding(.vertical, -15)
     }
     
     @ViewBuilder

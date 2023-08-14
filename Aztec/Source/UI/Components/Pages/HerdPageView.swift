@@ -33,6 +33,8 @@ struct HerdPageView: View {
                 }
             }
         }
+        .aspectRatio(1, contentMode: .fit)
+        .padding(.vertical, -25)
     }
     
     

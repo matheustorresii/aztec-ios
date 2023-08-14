@@ -36,6 +36,7 @@ struct FourthSunPageView: View {
                     }
                 }
         }
+        .padding(.vertical, -55)
     }
 }
 

@@ -42,6 +42,7 @@ struct HurricanePageView: View {
                 .offset(x: 85, y: 70)
                 .frame(width: 100, height: 100, alignment: .center)
         }
+        .padding(.vertical, -75)
     }
 }
 

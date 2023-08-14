@@ -19,7 +19,6 @@ struct PageView: View {
             }
             
             buildAnimation()
-                .aspectRatio(1, contentMode: .fit)
             
             if let bottomText = page.bottomText {
                 buildText(bottomText)

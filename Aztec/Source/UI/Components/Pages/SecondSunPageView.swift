@@ -36,6 +36,7 @@ struct SecondSunPageView: View {
                     }
                 }
         }
+        .padding(.vertical, -55)
     }
 }
 

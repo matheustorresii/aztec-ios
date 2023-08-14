@@ -41,6 +41,7 @@ struct DroughtPageView: View {
                 .offset(x: 70, y: 60)
                 .frame(width: 100, height: 100, alignment: .center)
         }
+        .padding(.vertical, -55)
     }
 }
 

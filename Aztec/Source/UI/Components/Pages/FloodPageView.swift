@@ -34,6 +34,8 @@ struct FloodPageView: View {
                     }
                 }
         }
+        .aspectRatio(1, contentMode: .fit)
+        .padding(.vertical, -25)
     }
 }
 

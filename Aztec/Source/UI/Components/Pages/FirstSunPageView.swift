@@ -36,6 +36,7 @@ struct FirstSunPageView: View {
                     }
                 }
         }
+        .padding(.vertical, -55)
     }
 }
 
