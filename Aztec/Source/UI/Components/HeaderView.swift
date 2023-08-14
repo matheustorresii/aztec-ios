@@ -39,7 +39,7 @@ struct HeaderView: View {
             }
             .padding(.all, 16)
             
-            Color.black.frame(height: 2)
+            Color.primary.frame(height: 2)
         }
     }
     

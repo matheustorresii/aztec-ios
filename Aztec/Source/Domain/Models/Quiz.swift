@@ -44,6 +44,4 @@ let firstQuiz: Quiz = .init(title: "Aztec Gods",
                                     description: "Concerned about the second sun, the other gods threw a rabbit at Tecciztecatl, turning him into the Moon.")
                             ])
 
-var quizzes: [Quiz] {
-    [firstQuiz, firstQuiz, firstQuiz, firstQuiz, firstQuiz, firstQuiz, firstQuiz, firstQuiz, firstQuiz, firstQuiz ,firstQuiz]
-}
+var quizzes: [Quiz] = .init(repeating: firstQuiz, count: 100)

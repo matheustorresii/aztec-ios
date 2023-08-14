@@ -19,14 +19,14 @@ struct QuizListCellView: View {
                 .multilineTextAlignment(.center)
                 .zIndex(2)
                 .frame(width: 90)
-            Color.black.frame(width: 2)
+            Color.primary.frame(width: 2)
             Text("\(quiz.title)")
                 .font(.pressStart(size: 24))
                 .multilineTextAlignment(.center)
                 .zIndex(2)
         }
         .padding(8)
-        .border(.black, width: 4)
+        .border(.primary, width: 4)
         .frame(height: 95)
     }
 }
