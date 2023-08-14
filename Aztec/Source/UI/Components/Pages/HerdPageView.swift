@@ -14,21 +14,26 @@ struct HerdPageView: View {
     let timer = Timer.publish(every: 0.75, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        HStack {
-            if !paged {
-                createSquaredHerd()
+        GeometryReader { geometry in
+            let rect = geometry.frame(in: .local)
+            HStack {
+                if !paged {
+                    createSquaredHerd()
+                }
+                
+                if paged {
+                    createSquaredHerd()
+                }
             }
-            
-            if paged {
-                createSquaredHerd()
-            }
-        }
-        .onReceive(timer) { startDate in
-            withAnimation {
-                paged.toggle()
+            .frame(width: rect.width, height: rect.width)
+            .onReceive(timer) { startDate in
+                withAnimation {
+                    paged.toggle()
+                }
             }
         }
     }
+    
     
     @ViewBuilder
     private func createSquaredHerd() -> some View {
