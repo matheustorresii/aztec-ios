@@ -22,14 +22,16 @@ struct SwitchView: View {
     
     var body: some View {
         Button {
-            state.toggle()
+            withAnimation(.easeInOut(duration: 0.5)) {
+                state.toggle()
+            }
             didTapSwitchWithId?(id)
         } label: {
             SwitchInnerView(state: $state)
                 .background {
                     Rectangle()
                         .fill(.black)
-                        .offset(.init(width: -10, height: 10))
+                        .offset(.init(width: -4, height: 4))
                 }
         }
     }
@@ -44,10 +46,9 @@ struct SwitchInnerView: View {
             
             VStack {
                 Color.clear
-                Color.clear
                 Color.primary
                     .opacity(0.5)
-                    .padding(8)
+                    .padding(6)
             }
             HStack {
                 buildToggle()
@@ -75,7 +76,7 @@ struct SwitchInnerView: View {
             .fill(.white)
             .aspectRatio(1, contentMode: .fit)
             .border(Color.black, width: 4)
-            .padding(16)
+            .padding(6)
         if !state {
             Spacer()
         }
@@ -86,7 +87,9 @@ struct SwitchView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             SwitchView(state: false)
+                .frame(width: 100)
             SwitchView(state: true)
+                .frame(width: 100)
         }
         .padding(16)
     }

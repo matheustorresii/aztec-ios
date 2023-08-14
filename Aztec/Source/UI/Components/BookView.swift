@@ -10,6 +10,8 @@ import SwiftUI
 
 struct BookView: View {
     
+    @AppStorage(Constants.AppStorage.autoSpeech.rawValue) private var autoSpeech: Bool = false
+    
     @State private var page: Pages = .beginning
     @State private var isBack: Bool = false
     
@@ -55,8 +57,8 @@ struct BookView: View {
     }
     
     private func speak(_ string: String) {
+        guard autoSpeech, let identifier = identifierForVoice() else { return }
         let utterance = AVSpeechUtterance(string: string)
-        guard let identifier = identifierForVoice() else { return }
         utterance.voice = .init(identifier: identifier)
         synthesizer.speak(utterance)
     }

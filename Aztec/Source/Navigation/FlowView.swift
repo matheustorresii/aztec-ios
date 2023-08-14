@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct FlowView: View {
-    @StateObject
-    private var appCoordinator = AppCoordinator(path: .init())
+    @AppStorage(Constants.AppStorage.darkTheme.rawValue) private var darkTheme: Bool = false
+    @StateObject private var appCoordinator = AppCoordinator(path: .init())
     
     var body: some View {
         NavigationStack(path: $appCoordinator.path) {
@@ -20,5 +20,10 @@ struct FlowView: View {
                 }
         }
         .environmentObject(appCoordinator)
+        .environment(\.colorScheme, enviromentForToggle())
+    }
+    
+    private func enviromentForToggle() -> ColorScheme {
+        darkTheme ? .dark : .light
     }
 }
