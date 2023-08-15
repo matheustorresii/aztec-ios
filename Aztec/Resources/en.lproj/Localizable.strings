@@ -51,3 +51,42 @@
 "pages.human.bottom" = "People offered their own blood to please Quetzalcoatl and thank him for sacrificing his own blood, and to please Tonatiuh, who would refuse to move if they didn't offer enough sacrifices.";
 
 "pages.fifthSun.bottom" = "Currently, we are living in the Fifth Sun, this is the time we know and experience. According to the prophecy, it will end with a great earthquake.";
+
+// QUIZ
+
+"quiz.sun.title" = "Five Suns";
+
+"quiz.sun.1.question" = "Who was the First Sun?";
+"quiz.sun.1.description" = "Tezcatlipoca was the First Sun, also known as the Jaguar Sun.";
+"quiz.sun.1.A" = "Tezcatlipoca";
+"quiz.sun.1.B" = "Quetzalcoatl";
+"quiz.sun.1.C" = "Tlaloc";
+"quiz.sun.1.D" = "Xipe Totec";
+
+"quiz.sun.2.question" = "Who was the Second Sun?";
+"quiz.sun.2.description" = "Quetzalcoatl was the Second Sun, also known as the Wind Sun.";
+"quiz.sun.2.A" = "Xipe Totec";
+"quiz.sun.2.B" = "Tlaloc";
+"quiz.sun.2.C" = "Quetzalcoatl";
+"quiz.sun.2.D" = "Huitzilopochtli";
+
+"quiz.sun.3.question" = "Who was the Third Sun?";
+"quiz.sun.3.description" = "Tlaloc was the Third Sun, also known as the Rain Sun.";
+"quiz.sun.3.A" = "Tlaloc";
+"quiz.sun.3.B" = "Tezcatlipoca";
+"quiz.sun.3.C" = "Xipe Totec";
+"quiz.sun.3.D" = "Ometeotl";
+
+"quiz.sun.4.question" = "Who was the Fourth Sun?";
+"quiz.sun.4.description" = "Chalchiuhtlicue was the Fourth Sun, also known as the Water Sun.";
+"quiz.sun.4.A" = "Chalchiuhtlicue";
+"quiz.sun.4.B" = "Ometeotl";
+"quiz.sun.4.C" = "Xipe Totec";
+"quiz.sun.4.D" = "Huitzilopochtli";
+
+"quiz.sun.5.question" = "Who is the Fifth Sun?";
+"quiz.sun.5.description" = "Tonatiuh is the Fifth Sun, according to the prophecy, it will end with a great earthquake.";
+"quiz.sun.5.A" = "Ometeotl";
+"quiz.sun.5.B" = "Huitzilopochtli";
+"quiz.sun.5.C" = "Xipe Totec";
+"quiz.sun.5.D" = "Tonatiuh";

@@ -9,58 +9,58 @@ import Foundation
 
 struct SunQuiz: QuizModelProtocol {
     var quiz: Quiz {
-        .init(title: "Five Suns",
+        .init(title: "quiz.sun.title".localized(),
               questions: [
                 // MARK: - 1
-                .init(question: "Who was the First Sun?",
+                .init(question: "quiz.sun.1.question".localized(),
                       options: [
-                        .init(id: .A, option: "Tezcatlipoca"),
-                        .init(id: .B, option: "Quetzalcoatl"),
-                        .init(id: .C, option: "Tlaloc"),
-                        .init(id: .D, option: "Xipe Totec"),
+                        .init(id: .A, option: "quiz.sun.1.A".localized()),
+                        .init(id: .B, option: "quiz.sun.1.B".localized()),
+                        .init(id: .C, option: "quiz.sun.1.C".localized()),
+                        .init(id: .D, option: "quiz.sun.1.D".localized()),
                       ],
                       answer: .A,
-                      description: "Tezcatlipoca was the First Sun, also known as the Jaguar Sun."),
+                      description: "quiz.sun.1.description".localized()),
                 // MARK: - 2
-                .init(question: "Who was the Second Sun?",
+                .init(question: "quiz.sun.2.question".localized(),
                       options: [
-                        .init(id: .A, option: "Xipe Totec"),
-                        .init(id: .B, option: "Tlaloc"),
-                        .init(id: .C, option: "Quetzalcoatl"),
-                        .init(id: .D, option: "Huitzilopochtli"),
+                        .init(id: .A, option: "quiz.sun.2.A".localized()),
+                        .init(id: .B, option: "quiz.sun.2.B".localized()),
+                        .init(id: .C, option: "quiz.sun.2.C".localized()),
+                        .init(id: .D, option: "quiz.sun.2.D".localized()),
                       ],
                       answer: .C,
-                      description: "Quetzalcoatl was the Second Sun, also known as the Wind Sun."),
+                      description: "quiz.sun.2.description".localized()),
                 // MARK: - 3
-                .init(question: "Who was the Third Sun?",
+                .init(question: "quiz.sun.3.question".localized(),
                       options: [
-                        .init(id: .A, option: "Tlaloc"),
-                        .init(id: .B, option: "Tezcatlipoca"),
-                        .init(id: .C, option: "Xipe Totec"),
-                        .init(id: .D, option: "Ometeotl"),
+                        .init(id: .A, option: "quiz.sun.3.A".localized()),
+                        .init(id: .B, option: "quiz.sun.3.B".localized()),
+                        .init(id: .C, option: "quiz.sun.3.C".localized()),
+                        .init(id: .D, option: "quiz.sun.3.D".localized()),
                       ],
                       answer: .A,
-                      description: "Tlaloc was the Third Sun, also known as the Rain Sun."),
+                      description: "quiz.sun.3.description".localized()),
                 // MARK: - 4
-                .init(question: "Who was the Fourth Sun?",
+                .init(question: "quiz.sun.4.question".localized(),
                       options: [
-                        .init(id: .A, option: "Chalchiuhtlicue"),
-                        .init(id: .B, option: "Ometeotl"),
-                        .init(id: .C, option: "Xipe Totec"),
-                        .init(id: .D, option: "Huitzilopochtli"),
+                        .init(id: .A, option: "quiz.sun.4.A".localized()),
+                        .init(id: .B, option: "quiz.sun.4.B".localized()),
+                        .init(id: .C, option: "quiz.sun.4.C".localized()),
+                        .init(id: .D, option: "quiz.sun.4.D".localized()),
                       ],
                       answer: .A,
-                      description: "Chalchiuhtlicue was the Fourth Sun, also known as the Water Sun."),
+                      description: "quiz.sun.4.description".localized()),
                 // MARK: - 5
-                .init(question: "Who is the Fifth Sun?",
+                .init(question: "quiz.sun.5.question".localized(),
                       options: [
-                        .init(id: .A, option: "Ometeotl"),
-                        .init(id: .B, option: "Huitzilopochtli"),
-                        .init(id: .C, option: "Xipe Totec"),
-                        .init(id: .D, option: "Tonatiuh"),
+                        .init(id: .A, option: "quiz.sun.1.A".localized()),
+                        .init(id: .B, option: "quiz.sun.2.B".localized()),
+                        .init(id: .C, option: "quiz.sun.3.C".localized()),
+                        .init(id: .D, option: "quiz.sun.4.D".localized()),
                       ],
                       answer: .D,
-                      description: "Tonatiuh is the Fifth Sun, according to prophecy, it will end with a great earthquake."),
+                      description: "quiz.sun.5.description".localized()),
               ])
     }
 }

@@ -30,10 +30,11 @@ struct SwitchView: View {
             SwitchInnerView(state: $state)
                 .background {
                     Rectangle()
-                        .fill(.black)
+                        .fill(.primary)
                         .offset(.init(width: -4, height: 4))
                 }
         }
+        .tint(.primary)
     }
 }
 

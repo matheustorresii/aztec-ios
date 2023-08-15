@@ -51,3 +51,42 @@
 "pages.human.bottom" = "As pessoas ofereciam seu próprio sangue para agradar Quetzalcóatl e agradecê-lo por sacrificar seu próprio sangue, e para agradar Tonatiuh, que se recusaria a se mover se não oferecessem sacrifícios suficientes.";
 
 "pages.fifthSun.bottom" = "Atualmente, estamos vivendo no Quinto Sol, este é o tempo que conhecemos e experimentamos, de acordo com a profecia, ele terminará com um grande terremoto.";
+
+// QUIZ
+
+"quiz.sun.title" = "Cinco Sóis";
+
+"quiz.sun.1.question" = "Quem foi o Primeiro Sol?";
+"quiz.sun.1.description" = "Tezcatlipoca foi o Primeiro Sol, também conhecido como o Sol Jaguar.";
+"quiz.sun.1.A" = "Tezcatlipoca";
+"quiz.sun.1.B" = "Quetzalcoatl";
+"quiz.sun.1.C" = "Tlaloc";
+"quiz.sun.1.D" = "Xipe Totec";
+
+"quiz.sun.2.question" = "Quem foi o Segundo Sol?";
+"quiz.sun.2.description" = "Quetzalcoatl foi o Segundo Sol, também conhecido como o Sol do Vento.";
+"quiz.sun.2.A" = "Xipe Totec";
+"quiz.sun.2.B" = "Tlaloc";
+"quiz.sun.2.C" = "Quetzalcoatl";
+"quiz.sun.2.D" = "Huitzilopochtli";
+
+"quiz.sun.3.question" = "Quem foi o Terceiro Sol?";
+"quiz.sun.3.description" = "Tlaloc foi o Terceiro Sol, também conhecido como o Sol da Chuva.";
+"quiz.sun.3.A" = "Tlaloc";
+"quiz.sun.3.B" = "Tezcatlipoca";
+"quiz.sun.3.C" = "Xipe Totec";
+"quiz.sun.3.D" = "Ometeotl";
+
+"quiz.sun.4.question" = "Quem foi o Quarto Sol?";
+"quiz.sun.4.description" = "Chalchiuhtlicue foi o Quarto Sol, também conhecido como o Sol da Água.";
+"quiz.sun.4.A" = "Chalchiuhtlicue";
+"quiz.sun.4.B" = "Ometeotl";
+"quiz.sun.4.C" = "Xipe Totec";
+"quiz.sun.4.D" = "Huitzilopochtli";
+
+"quiz.sun.5.question" = "Quem é o Quinto Sol?";
+"quiz.sun.5.description" = "Tonatiuh é o Quinto Sol, de acordo com a profecia, ele terminará com um grande terremoto.";
+"quiz.sun.5.A" = "Ometeotl";
+"quiz.sun.5.B" = "Huitzilopochtli";
+"quiz.sun.5.C" = "Xipe Totec";
+"quiz.sun.5.D" = "Tonatiuh";

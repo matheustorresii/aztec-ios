@@ -16,7 +16,7 @@ struct SettingsScreen: View, NavigableView {
     
     var body: some View {
         VStack(spacing: 0) {
-            HeaderView(title: "title.quiz".localized(), leftLabel: "<", leftAction: {
+            HeaderView(title: "title.settings".localized(), leftLabel: "<", leftAction: {
                 navigation.send(.pop)
             })
             
