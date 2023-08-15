@@ -12,12 +12,12 @@ struct Quiz {
     var questions: [Question]
     
     enum All: CaseIterable {
-        case gods
+        case sun
         
         var quiz: Quiz {
             switch self {
-            case .gods:
-                return GodsQuiz().quiz
+            case .sun:
+                return SunQuiz().quiz
             }
         }
     }
@@ -69,4 +69,8 @@ extension Quiz.Question {
             }
         }
     }
+}
+
+protocol QuizModelProtocol {
+    var quiz: Quiz { get }
 }

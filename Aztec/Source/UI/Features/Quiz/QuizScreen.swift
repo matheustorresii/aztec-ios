@@ -117,6 +117,6 @@ struct QuizScreen: View, NavigableView {
 
 struct QuizScreen_Previews: PreviewProvider {
     static var previews: some View {
-        QuizScreen(quiz: GodsQuiz().quiz)
+        QuizScreen(quiz: SunQuiz().quiz)
     }
 }

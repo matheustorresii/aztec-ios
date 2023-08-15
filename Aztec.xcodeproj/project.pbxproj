@@ -13,7 +13,6 @@
 		FC94E8892A8AC82E0027B826 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E8882A8AC82E0027B826 /* SwitchView.swift */; };
 		FC94E88D2A8AE8020027B826 /* SettingsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */; };
 		FC94E88F2A8AEBF30027B826 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E88E2A8AEBF30027B826 /* Constants.swift */; };
-		FC94E8932A8AF2F10027B826 /* GodsQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E8922A8AF2F10027B826 /* GodsQuiz.swift */; };
 		FCA693F12A886F2E00278908 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693F02A886F2E00278908 /* AppCoordinator.swift */; };
 		FCA693F32A89636C00278908 /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693F22A89636C00278908 /* FlowView.swift */; };
 		FCA693F82A89642F00278908 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693F72A89642F00278908 /* HomeScreen.swift */; };
@@ -49,6 +48,7 @@
 		FCA694552A8A32AB00278908 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694542A8A32AB00278908 /* Quiz.swift */; };
 		FCA694572A8A363200278908 /* QuizListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694562A8A363200278908 /* QuizListCellView.swift */; };
 		FCABB4442A8B1E7400DF9306 /* QuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */; };
+		FCABB4462A8B36C800DF9306 /* SunQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABB4452A8B36C800DF9306 /* SunQuiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +59,6 @@
 		FC94E8882A8AC82E0027B826 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellView.swift; sourceTree = "<group>"; };
 		FC94E88E2A8AEBF30027B826 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FC94E8922A8AF2F10027B826 /* GodsQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodsQuiz.swift; sourceTree = "<group>"; };
 		FCA693F02A886F2E00278908 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FCA693F22A89636C00278908 /* FlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowView.swift; sourceTree = "<group>"; };
 		FCA693F72A89642F00278908 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -99,6 +98,7 @@
 		FCA694542A8A32AB00278908 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		FCA694562A8A363200278908 /* QuizListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListCellView.swift; sourceTree = "<group>"; };
 		FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultView.swift; sourceTree = "<group>"; };
+		FCABB4452A8B36C800DF9306 /* SunQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunQuiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +161,7 @@
 		FC94E8912A8AF2E90027B826 /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				FC94E8922A8AF2F10027B826 /* GodsQuiz.swift */,
+				FCABB4452A8B36C800DF9306 /* SunQuiz.swift */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -409,12 +409,12 @@
 				FCA693F32A89636C00278908 /* FlowView.swift in Sources */,
 				FCA693FC2A8964BF00278908 /* FlowRoute.swift in Sources */,
 				FC1C0FCA2A8206EF0075AB92 /* AztecApp.swift in Sources */,
-				FC94E8932A8AF2F10027B826 /* GodsQuiz.swift in Sources */,
 				FCA694182A89B48B00278908 /* Font+Extensions.swift in Sources */,
 				FCA694332A89EAAF00278908 /* FourthSunPageView.swift in Sources */,
 				FCA693FF2A8966F800278908 /* QuizScreen.swift in Sources */,
 				FCA6942D2A89EA9500278908 /* HurricanePageView.swift in Sources */,
 				FCA6940A2A898C0F00278908 /* Collection+Extensions.swift in Sources */,
+				FCABB4462A8B36C800DF9306 /* SunQuiz.swift in Sources */,
 				FCA694512A8A31D400278908 /* QuizListScreen.swift in Sources */,
 				FCA694252A89CC5B00278908 /* HerdPageView.swift in Sources */,
 				FCA694452A8A187A00278908 /* String+Extensions.swift in Sources */,

@@ -18,24 +18,24 @@
 
 // PAGES
 
-"pages.beginning.top" = "A long time ago, Ōmeteōtl, the dual god, had four children.";
+"pages.beginning.top" = "A long time ago, Ometeotl, the dual god, had four children.";
 
-"pages.gods.top" = "They were Xipe Totec, Tezcatlipoca, Quetzalcóatl, and Huitzilopochtli.";
+"pages.gods.top" = "They were Xipe Totec, Tezcatlipoca, Quetzalcoatl, and Huitzilopochtli.";
 
 "pages.firstSun.top" = "During that era, there were strong giants living on Earth, but they needed a Sun.";
 "pages.firstSun.bottom" = "The First Sun was Tezcatlipoca, and his reign as the first sun god is known as the Jaguar Sun.";
 
-"pages.herd.top" = "But Quetzalcóatl dethroned Tezcatlipoca to take his place as the god of the Sun.";
+"pages.herd.top" = "But Quetzalcoatl dethroned Tezcatlipoca to take his place as the god of the Sun.";
 "pages.herd.bottom" = "Defeated, Tezcatlipoca transformed into a jaguar and joined other jaguars to devour all the giants.";
 
-"pages.secondSun.top" = "The Second Sun was Quetzalcóatl, his era was called the Wind Sun, and the Earth was inhabited by humans who only ate nuts.";
-"pages.secondSun.bottom" = "But Tezcatlipoca wanted to get revenge on Quetzalcóatl and, in the form of a jaguar, knocked his brother down from the sky.";
+"pages.secondSun.top" = "The Second Sun was Quetzalcoatl, his era was called the Wind Sun, and the Earth was inhabited by humans who only ate nuts.";
+"pages.secondSun.bottom" = "But Tezcatlipoca wanted to get revenge on Quetzalcoatl and, in the form of a jaguar, knocked his brother down from the sky.";
 
 "pages.hurricane.top" = "This era came to an end through catastrophic hurricanes, and the few survivors fled to the treetops and were transformed into monkeys.";
 
 "pages.thirdSun.top" = "Tlaloc was crowned the Third Sun, also known as the Rain Sun, the Earth was dominated by water, and the humans created only ate seeds that grew in the water.";
 
-"pages.drought.top" = "However, Tezcatlipoca seduced the love of his life, Xōchiquetzal, after which Tlaloc became so consumed by his own sadness that he refused to fulfill his duties as the Sun, leading to a great drought.";
+"pages.drought.top" = "However, Tezcatlipoca seduced the love of his life, Xochiquetzal, after which Tlaloc became so consumed by his own sadness that he refused to fulfill his duties as the Sun, leading to a great drought.";
 "pages.drought.bottom" = "Tlaloc became increasingly angry with the people's prayers and unleashed a rain of fire upon the Earth, and this was the end of the Third Sun.";
 
 "pages.fourthSun.top" = "The Fourth Sun was Tlaloc's new wife, Chalchiuhtlicue, who ruled during the era of the Water Sun.";
@@ -47,7 +47,7 @@
 "pages.moon.top" = "The gods gathered to decide who would sacrifice themselves to become the Fifth Sun, and they chose two gods: Nanauatl, a humble and modest god, and Tecciztecatl, a rich and powerful god, who tried four times to jump into the fire but feared the intense heat of the flames.";
 "pages.moon.bottom" = "Finally, Nanauatl jumped, followed by the ashamed Tecciztecatl, and Nanauatl became the true Sun, receiving a new name, Tonatiuh. Concerned about the second sun, the other gods threw a rabbit at Tecciztecatl, turning him into the Moon.";
 
-"pages.human.top" = "Meanwhile, Quetzalcóatl did not accept the destruction of his people and went to the underworld, stole the bones of those who came before, and immersed them in his own blood.";
-"pages.human.bottom" = "People offered their own blood to please Quetzalcóatl and thank him for sacrificing his own blood, and to please Tonatiuh, who would refuse to move if they didn't offer enough sacrifices.";
+"pages.human.top" = "Meanwhile, Quetzalcoatl did not accept the destruction of his people and went to the underworld, stole the bones of those who came before, and immersed them in his own blood.";
+"pages.human.bottom" = "People offered their own blood to please Quetzalcoatl and thank him for sacrificing his own blood, and to please Tonatiuh, who would refuse to move if they didn't offer enough sacrifices.";
 
-"pages.fifthSun.bottom" = "Currently, we are living in the Fifth Sun; this is the time we know and experience. According to the prophecy, it will end with a great earthquake.";
+"pages.fifthSun.bottom" = "Currently, we are living in the Fifth Sun, this is the time we know and experience. According to the prophecy, it will end with a great earthquake.";
