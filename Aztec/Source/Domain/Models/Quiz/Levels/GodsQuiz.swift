@@ -10,8 +10,7 @@ import Foundation
 struct GodsQuiz {
     var quiz: Quiz {
         let questions: [Quiz.Question] = [
-            .init(id: "1",
-                  question: "What does the name of Quetzalcoatl, the aztec god of wisdom and life, mean in English?",
+            .init(question: "What does the name of Quetzalcoatl, the aztec god of wisdom and life, mean in English?",
                   options: [
                     .init(id: .A, option: "Wise One"),
                     .init(id: .B, option: "Feathered Serpent"),
@@ -21,8 +20,7 @@ struct GodsQuiz {
                   answer: .B,
                   description: "The name Quetzalcoatl comes from the Nahuatl language and means \"Feathered Serpent\""),
             
-            .init(id: "2",
-                  question: "Which close ally of Quetzalcoatl is the Aztec god of the rain?",
+            .init(question: "Which close ally of Quetzalcoatl is the Aztec god of the rain?",
                   options: [
                     .init(id: .A, option: "Xolotl"),
                     .init(id: .B, option: "Meztli"),
@@ -32,8 +30,7 @@ struct GodsQuiz {
                   answer: .C,
                   description: "Tlaloc is the god of rain, also a deity of earthly fertility and water."),
             
-            .init(id: "3",
-                  question: "Which god turned into a jaguar to eat all the giants?",
+            .init(question: "Which god turned into a jaguar to eat all the giants?",
                   options: [
                     .init(id: .A, option: "Tezcatlipoca"),
                     .init(id: .B, option: "Huitzilopochtli"),
@@ -43,8 +40,7 @@ struct GodsQuiz {
                   answer: .A,
                   description: "Tezcatlipoca transformed into a jaguar and joined other jaguars to devour all the giants."),
             
-            .init(id: "4",
-                  question: "Which god became the moon after a rabbit was thrown at him?",
+            .init(question: "Which god became the moon after a rabbit was thrown at him?",
                   options: [
                     .init(id: .A, option: "Chalchiuhtlicue"),
                     .init(id: .B, option: "Tezcatlipoca"),

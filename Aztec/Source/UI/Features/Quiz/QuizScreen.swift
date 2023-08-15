@@ -32,7 +32,7 @@ struct QuizScreen: View, NavigableView {
             
             if let question = quiz.questions[safe: progress] {
                 buildQuizView(question) { selectedOption in
-                    quiz.questions[progress].success = selectedOption == question.answer
+                    quiz.questions[progress].selected = selectedOption
                     progress += 1
                 }
                 .padding(.top, 16)
@@ -72,8 +72,8 @@ struct QuizScreen: View, NavigableView {
     private func buildProgressView() -> some View {
         HStack(spacing: 0) {
             ForEach(quiz.questions, id: \.question) { question in
-                if let success = question.success {
-                    if success {
+                if let selected = question.selected {
+                    if selected == question.answer {
                         Color.green
                     } else {
                         Color.red

@@ -25,25 +25,22 @@ struct Quiz {
         
 extension Quiz {
     struct Question {
-        let id: String
         let question: String
         let options: [Option]
         let answer: OptionId
         let description: String
-        var success: Bool?
+        var selected: OptionId?
         
-        init(id: String,
-             question: String,
+        init(question: String,
              options: [Option],
              answer: OptionId,
              description: String,
-             success: Bool? = nil) {
-            self.id = id
+             selected: OptionId? = nil) {
             self.question = question
             self.options = options
             self.answer = answer
             self.description = description
-            self.success = success
+            self.selected = selected
         }
     }
 }

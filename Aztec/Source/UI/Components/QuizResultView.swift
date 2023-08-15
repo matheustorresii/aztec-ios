@@ -11,12 +11,66 @@ struct QuizResultView: View {
     let quiz: Quiz
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(showsIndicators: false) {
+            ForEach(Array(quiz.questions.enumerated()), id: \.offset) { index, question in
+                VStack {
+                    buildResultLine(index: index, question: question)
+                }
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private func buildResultLine(index: Int, question: Quiz.Question) -> some View {
+        VStack(alignment: .center, spacing: 0) {
+            Spacer().frame(height: 24)
+            
+            Text("Question \(index + 1)")
+                .font(.pressStart(size: 28))
+            
+            Spacer().frame(height: 8)
+            
+            if let selected = question.selected {
+                Text(selected.rawValue + ":")
+                    .font(.pressStart(size: 24)) +
+                Text(selected == question.answer ? "Correct" : "Incorrect")
+                    .font(.pressStart(size: 24))
+                    .foregroundColor(selected == question.answer ? .green : .red)
+            }
+            
+            Spacer().frame(height: 24)
+            
+            Text(question.description)
+                .font(.pressStart(size: 22))
+            
+            Spacer().frame(height: 24)
+            
+            if index != quiz.questions.count-1 {
+                Color.primary.frame(height: 4)
+            }
+        }
     }
 }
 
 struct QuizResultView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizResultView(quiz: GodsQuiz().quiz)
+        QuizResultView(quiz: .init(title: "Teste",
+                                   questions: [
+                                    .init(question: "Pergunta 1",
+                                          options: [],
+                                          answer: .D,
+                                          description: "Resposta da pergunta 1",
+                                          selected: .A),
+                                    .init(question: "Pergunta 2",
+                                          options: [],
+                                          answer: .C,
+                                          description: "Resposta da pergunta 2",
+                                          selected: .C),
+                                    .init(question: "Pergunta 3",
+                                          options: [],
+                                          answer: .A,
+                                          description: "Resposta da pergunta 3",
+                                          selected: .D)
+                                   ]))
     }
 }
