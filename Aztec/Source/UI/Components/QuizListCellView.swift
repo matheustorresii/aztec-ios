@@ -20,21 +20,25 @@ struct QuizListCellView: View {
                 .zIndex(2)
                 .frame(width: 90)
             Color.primary.frame(width: 2)
-            Text("\(quiz.title)")
-                .font(.pressStart(size: 24))
-                .multilineTextAlignment(.center)
-                .zIndex(2)
+            HStack {
+                Spacer()
+                Text("\(quiz.title)")
+                    .font(.pressStart(size: 24))
+                    .multilineTextAlignment(.center)
+                    .zIndex(2)
+                Spacer()
+            }
         }
-        .padding(8)
         .border(.primary, width: 4)
         .frame(height: 95)
+        .padding(.top, 16)
+        .padding(.horizontal, 16)
     }
 }
 
 struct QuizListCellView_Previews: PreviewProvider {
     static var previews: some View {
         QuizListCellView(index: 98,
-                         quiz: quizzes.first ?? .init(title: .empty,
-                                                      questions: []))
+                         quiz: .init(title: "Test Quiz", questions: []))
     }
 }

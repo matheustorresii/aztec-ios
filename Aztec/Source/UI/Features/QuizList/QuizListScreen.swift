@@ -18,18 +18,19 @@ struct QuizListScreen: View, NavigableView {
             })
             
             ScrollView(showsIndicators: false) {
-                VStack {
-                    Spacer().frame(height: 16)
-                    ForEach(Array(quizzes.enumerated()), id: \.offset) { index, quiz in
-                        Button {
-                            navigation.send(.push(.quiz(quiz)))
-                        } label: {
-                            QuizListCellView(index: index, quiz: quiz)
-                        }
-                        .tint(.primary)
+                ForEach(Array(quizList().enumerated()), id: \.offset) { index, quiz in
+                    Button {
+                        navigation.send(.push(.quiz(quiz)))
+                    } label: {
+                        QuizListCellView(index: index, quiz: quiz)
                     }
+                    .tint(.primary)
                 }
             }
         }
+    }
+    
+    private func quizList() -> [Quiz] {
+        Quiz.All.allCases.map { $0.quiz }
     }
 }
