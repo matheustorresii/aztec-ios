@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC1467B62A8C496F0023880B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1467B52A8C496F0023880B /* LaunchScreen.storyboard */; };
+		FC1467B82A8C4B290023880B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1467B72A8C4B290023880B /* OnboardingView.swift */; };
 		FC1C0FCA2A8206EF0075AB92 /* AztecApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C0FC92A8206EF0075AB92 /* AztecApp.swift */; };
 		FC1C0FCE2A8206F10075AB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1C0FCD2A8206F10075AB92 /* Assets.xcassets */; };
 		FC1C0FD12A8206F10075AB92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1C0FD02A8206F10075AB92 /* Preview Assets.xcassets */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		FC1467B52A8C496F0023880B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC1467B72A8C4B290023880B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FC1C0FC62A8206EF0075AB92 /* Aztec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aztec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1C0FC92A8206EF0075AB92 /* AztecApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AztecApp.swift; sourceTree = "<group>"; };
 		FC1C0FCD2A8206F10075AB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				FCA694192A89B52D00278908 /* Pages */,
 				FCA6940B2A89946D00278908 /* BookView.swift */,
 				FCA6944B2A8A2B0A00278908 /* HeaderView.swift */,
+				FC1467B72A8C4B290023880B /* OnboardingView.swift */,
 				FCA694112A89B0C700278908 /* PageView.swift */,
 				FCA694562A8A363200278908 /* QuizListCellView.swift */,
 				FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */,
@@ -429,6 +432,7 @@
 				FCA6942B2A89EA8600278908 /* SecondSunPageView.swift in Sources */,
 				FCA694122A89B0C700278908 /* PageView.swift in Sources */,
 				FCA694352A89EAB700278908 /* FloodPageView.swift in Sources */,
+				FC1467B82A8C4B290023880B /* OnboardingView.swift in Sources */,
 				FCA6944A2A8A29A000278908 /* SettingsScreen.swift in Sources */,
 				FCA694372A89EABE00278908 /* MoonPageView.swift in Sources */,
 				FCA6943B2A89EADC00278908 /* FifthSunPageView.swift in Sources */,

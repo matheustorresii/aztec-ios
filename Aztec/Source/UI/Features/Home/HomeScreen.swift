@@ -9,6 +9,9 @@ import Combine
 import SwiftUI
 
 struct HomeScreen: View, NavigableView {
+    @AppStorage(Constants.AppStorage.shouldShowOnboarding.rawValue)
+    private var shouldShowOnboarding: Bool = true
+    
     var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
     
     var body: some View {
@@ -20,6 +23,11 @@ struct HomeScreen: View, NavigableView {
             }
             
             BookView()
+        }
+        .if(shouldShowOnboarding) { view in
+            view.overlay {
+                OnboardingView()
+            }
         }
     }
 }

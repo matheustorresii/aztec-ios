@@ -39,10 +39,10 @@ struct SettingsScreen: View, NavigableView {
     
     private func didTapSwitchWith(id: String) {
         guard let appStorage = Constants.AppStorage(rawValue: id) else { return }
-        switch appStorage {
-        case .darkTheme:
+        if case .darkTheme = appStorage {
             darkTheme.toggle()
-        case .autoSpeech:
+        }
+        if case .autoSpeech = appStorage {
             autoSpeech.toggle()
         }
     }
