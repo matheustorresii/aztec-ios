@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1467B62A8C496F0023880B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1467B52A8C496F0023880B /* LaunchScreen.storyboard */; };
 		FC1C0FCA2A8206EF0075AB92 /* AztecApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C0FC92A8206EF0075AB92 /* AztecApp.swift */; };
 		FC1C0FCE2A8206F10075AB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1C0FCD2A8206F10075AB92 /* Assets.xcassets */; };
 		FC1C0FD12A8206F10075AB92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1C0FD02A8206F10075AB92 /* Preview Assets.xcassets */; };
@@ -52,6 +53,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC1467B52A8C496F0023880B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC1C0FC62A8206EF0075AB92 /* Aztec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aztec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1C0FC92A8206EF0075AB92 /* AztecApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AztecApp.swift; sourceTree = "<group>"; };
 		FC1C0FCD2A8206F10075AB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				FCA694202A89C25F00278908 /* Localizable.strings */,
 				FCA694402A8A06FB00278908 /* Rain.sks */,
 				FCA694412A8A06FB00278908 /* Assets.xcassets */,
+				FC1467B52A8C496F0023880B /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				FCA6941E2A89C25F00278908 /* Localizable.strings in Resources */,
 				FC1C0FD12A8206F10075AB92 /* Preview Assets.xcassets in Resources */,
 				FCA694422A8A06FB00278908 /* Rain.sks in Resources */,
+				FC1467B62A8C496F0023880B /* LaunchScreen.storyboard in Resources */,
 				FCA694432A8A06FB00278908 /* Assets.xcassets in Resources */,
 				FC1C0FCE2A8206F10075AB92 /* Assets.xcassets in Resources */,
 			);
@@ -586,7 +590,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Aztec X";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -621,7 +625,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Aztec X";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.educational-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
