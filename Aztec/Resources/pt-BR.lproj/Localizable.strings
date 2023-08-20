@@ -56,6 +56,10 @@
 
 "pages.fifthSun.bottom" = "Atualmente, estamos vivendo no Quinto Sol, este é o tempo que conhecemos e experimentamos, de acordo com a profecia, ele terminará com um grande terremoto.";
 
+// CHAPTER
+
+"chapter.sun.title" = "Cinco Sóis";
+
 // QUIZ
 
 "quiz.sun.title" = "Cinco Sóis";

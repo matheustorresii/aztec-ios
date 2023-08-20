@@ -12,44 +12,38 @@ struct HomeScreen: View, NavigableView {
     @AppStorage(Constants.AppStorage.shouldShowOnboarding.rawValue)
     private var shouldShowOnboarding: Bool = true
     
+    @State private var chapter: Chapter = .sun
+    
     var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
     
     var body: some View {
         VStack(spacing: 0) {
-            HeaderView(leftLabel: "?", rightLabel: "Ξ") {
-                navigation.send(.push(.quizList))
-            } rightAction: {
-                navigation.send(.push(.settings))
-            }
+            HeaderView(title: chapter.title,
+                       leftLabel: "?",
+                       rightLabel: "Ξ",
+                       titleAction: didTapTitle,
+                       leftAction: didTapLeftIcon,
+                       rightAction: didTapRightIcon)
             
-            BookView(page: SunPages.start)
+            BookView(page: chapter.page)
         }
         .if(shouldShowOnboarding) { view in
             view.overlay {
-                GeometryReader { geometry in
-                    ZStack {
-                        Color.black.opacity(0.75).ignoresSafeArea()
-                        Text(LocalizedStringKey("home.swipe".localized()))
-                            .font(.pressStart(size: 12))
-                            .foregroundColor(.black)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 24)
-                            .offset(x: -2, y: 2)
-                        Text(LocalizedStringKey("home.swipe".localized()))
-                            .font(.pressStart(size: 12))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 24)
-                    }
-                    .onTapGesture {
-                        self.didTapOnboarding()
-                    }
-                    .gesture(DragGesture().onEnded { _ in
-                        self.didTapOnboarding()
-                    })
-                }
+                OnboardingView(didTap: didTapOnboarding)
             }
         }
+    }
+    
+    private func didTapTitle() {
+        print("didTapTitle")
+    }
+    
+    private func didTapLeftIcon() {
+        navigation.send(.push(.quizList))
+    }
+    
+    private func didTapRightIcon() {
+        navigation.send(.push(.settings))
     }
     
     private func didTapOnboarding() {

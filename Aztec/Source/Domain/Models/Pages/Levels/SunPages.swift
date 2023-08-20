@@ -55,10 +55,6 @@ enum SunPages: Int, PageProtocol {
         return AnyView(view)
     }
     
-    var title: String {
-        return "Five Suns"
-    }
-    
     static var start: PageProtocol {
         return SunPages.beginning
     }

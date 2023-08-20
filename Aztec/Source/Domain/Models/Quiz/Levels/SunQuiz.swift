@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SunQuiz: QuizModelProtocol {
+struct SunQuiz: QuizProtocol {
     var quiz: Quiz {
         .init(title: "quiz.sun.title".localized(),
               questions: [

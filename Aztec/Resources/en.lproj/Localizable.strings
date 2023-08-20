@@ -56,6 +56,10 @@
 
 "pages.fifthSun.bottom" = "Currently, we are living in the Fifth Sun, this is the time we know and experience. According to the prophecy, it will end with a great earthquake.";
 
+// CHAPTER
+
+"chapter.sun.title" = "Five Suns";
+
 // QUIZ
 
 "quiz.sun.title" = "Five Suns";

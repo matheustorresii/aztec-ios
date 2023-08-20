@@ -56,3 +56,46 @@
 
 "pages.fifthSun.bottom" = "Actualmente, estamos viviendo en el Quinto Sol, este es el tiempo que conocemos y experimentamos. Según la profecía, terminará con un gran terremoto.";
 
+// CHAPTER
+
+"chapter.sun.title" = "Cinco Soles";
+
+// QUIZ
+
+"quiz.sun.title" = "Cinco Soles";
+
+"quiz.sun.1.question" = "¿Quién fue el Primer Sol?";
+"quiz.sun.1.description" = "Tezcatlipoca fue el Primer Sol, también conocido como el Sol del Jaguar.";
+"quiz.sun.1.A" = "Tezcatlipoca";
+"quiz.sun.1.B" = "Quetzalcoatl";
+"quiz.sun.1.C" = "Tlaloc";
+"quiz.sun.1.D" = "Xipe Totec";
+
+"quiz.sun.2.question" = "¿Quién fue el Segundo Sol?";
+"quiz.sun.2.description" = "Quetzalcoatl fue el Segundo Sol, también conocido como el Sol del Viento.";
+"quiz.sun.2.A" = "Xipe Totec";
+"quiz.sun.2.B" = "Tlaloc";
+"quiz.sun.2.C" = "Quetzalcoatl";
+"quiz.sun.2.D" = "Huitzilopochtli";
+
+"quiz.sun.3.question" = "¿Quién fue el Tercer Sol?";
+"quiz.sun.3.description" = "Tlaloc fue el Tercer Sol, también conocido como el Sol de la Lluvia.";
+"quiz.sun.3.A" = "Tlaloc";
+"quiz.sun.3.B" = "Tezcatlipoca";
+"quiz.sun.3.C" = "Xipe Totec";
+"quiz.sun.3.D" = "Ometeotl";
+
+"quiz.sun.4.question" = "¿Quién fue el Cuarto Sol?";
+"quiz.sun.4.description" = "Chalchiuhtlicue fue el Cuarto Sol, también conocido como el Sol del Agua.";
+"quiz.sun.4.A" = "Chalchiuhtlicue";
+"quiz.sun.4.B" = "Ometeotl";
+"quiz.sun.4.C" = "Xipe Totec";
+"quiz.sun.4.D" = "Huitzilopochtli";
+
+"quiz.sun.5.question" = "¿Quién fue el Quinto Sol?";
+"quiz.sun.5.description" = "Tonatiuh es el Quinto Sol, según la profecía, terminará con un gran terremoto.";
+"quiz.sun.5.A" = "Ometeotl";
+"quiz.sun.5.B" = "Huitzilopochtli";
+"quiz.sun.5.C" = "Xipe Totec";
+"quiz.sun.5.D" = "Tonatiuh";
+

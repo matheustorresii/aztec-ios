@@ -31,6 +31,6 @@ struct QuizListScreen: View, NavigableView {
     }
     
     private func quizList() -> [Quiz] {
-        Quiz.All.allCases.map { $0.quiz }
+        Chapter.allCases.map { $0.quiz }
     }
 }

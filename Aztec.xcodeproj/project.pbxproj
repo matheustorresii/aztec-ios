@@ -51,6 +51,9 @@
 		FCABB4462A8B36C800DF9306 /* SunQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABB4452A8B36C800DF9306 /* SunQuiz.swift */; };
 		FCC3F5B22A91EDFF0074924D /* PageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3F5B12A91EDFF0074924D /* PageProtocol.swift */; };
 		FCC3F5B52A91EE650074924D /* SunPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3F5B42A91EE650074924D /* SunPages.swift */; };
+		FCC3F5B72A91F6B70074924D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3F5B62A91F6B70074924D /* OnboardingView.swift */; };
+		FCC3F5B92A91F8740074924D /* QuizProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3F5B82A91F8740074924D /* QuizProtocol.swift */; };
+		FCC3F5BB2A91F87E0074924D /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3F5BA2A91F87E0074924D /* Chapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +106,9 @@
 		FCABB4452A8B36C800DF9306 /* SunQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunQuiz.swift; sourceTree = "<group>"; };
 		FCC3F5B12A91EDFF0074924D /* PageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageProtocol.swift; sourceTree = "<group>"; };
 		FCC3F5B42A91EE650074924D /* SunPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunPages.swift; sourceTree = "<group>"; };
+		FCC3F5B62A91F6B70074924D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		FCC3F5B82A91F8740074924D /* QuizProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizProtocol.swift; sourceTree = "<group>"; };
+		FCC3F5BA2A91F87E0074924D /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 			children = (
 				FC94E8912A8AF2E90027B826 /* Levels */,
 				FCA694542A8A32AB00278908 /* Quiz.swift */,
+				FCC3F5B82A91F8740074924D /* QuizProtocol.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -234,6 +241,7 @@
 				FCA694192A89B52D00278908 /* Pages */,
 				FCA6940B2A89946D00278908 /* BookView.swift */,
 				FCA6944B2A8A2B0A00278908 /* HeaderView.swift */,
+				FCC3F5B62A91F6B70074924D /* OnboardingView.swift */,
 				FCA694112A89B0C700278908 /* PageView.swift */,
 				FCA694562A8A363200278908 /* QuizListCellView.swift */,
 				FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */,
@@ -331,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				FCC3F5B32A91EE5C0074924D /* Levels */,
+				FCC3F5BA2A91F87E0074924D /* Chapter.swift */,
 				FCC3F5B12A91EDFF0074924D /* PageProtocol.swift */,
 			);
 			path = Pages;
@@ -426,6 +435,7 @@
 				FC94E88F2A8AEBF30027B826 /* Constants.swift in Sources */,
 				FCA6943F2A89FE3300278908 /* View+Extensions.swift in Sources */,
 				FCA693FA2A8964B400278908 /* NavigableView.swift in Sources */,
+				FCC3F5B92A91F8740074924D /* QuizProtocol.swift in Sources */,
 				FCA6941B2A89B55400278908 /* GodsPageView.swift in Sources */,
 				FCABB4442A8B1E7400DF9306 /* QuizResultView.swift in Sources */,
 				FCA693F32A89636C00278908 /* FlowView.swift in Sources */,
@@ -433,6 +443,7 @@
 				FC1C0FCA2A8206EF0075AB92 /* AztecApp.swift in Sources */,
 				FCA694182A89B48B00278908 /* Font+Extensions.swift in Sources */,
 				FCA694332A89EAAF00278908 /* FourthSunPageView.swift in Sources */,
+				FCC3F5B72A91F6B70074924D /* OnboardingView.swift in Sources */,
 				FCA693FF2A8966F800278908 /* QuizScreen.swift in Sources */,
 				FCC3F5B22A91EDFF0074924D /* PageProtocol.swift in Sources */,
 				FCA6942D2A89EA9500278908 /* HurricanePageView.swift in Sources */,
@@ -442,6 +453,7 @@
 				FCA694252A89CC5B00278908 /* HerdPageView.swift in Sources */,
 				FCA694452A8A187A00278908 /* String+Extensions.swift in Sources */,
 				FCA694572A8A363200278908 /* QuizListCellView.swift in Sources */,
+				FCC3F5BB2A91F87E0074924D /* Chapter.swift in Sources */,
 				FCA6942F2A89EA9D00278908 /* ThirdSunPageView.swift in Sources */,
 				FCA694312A89EAA600278908 /* DroughtPageView.swift in Sources */,
 				FCA694392A89EAC600278908 /* HumanPageView.swift in Sources */,

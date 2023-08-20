@@ -10,17 +10,6 @@ import SwiftUI
 struct Quiz {
     let title: String
     var questions: [Question]
-    
-    enum All: CaseIterable {
-        case sun
-        
-        var quiz: Quiz {
-            switch self {
-            case .sun:
-                return SunQuiz().quiz
-            }
-        }
-    }
 }
         
 extension Quiz {
@@ -69,8 +58,4 @@ extension Quiz.Question {
             }
         }
     }
-}
-
-protocol QuizModelProtocol {
-    var quiz: Quiz { get }
 }
