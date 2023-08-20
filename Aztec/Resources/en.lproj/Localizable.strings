@@ -11,6 +11,10 @@
 "title.settings" = "Settings";
 "title.quiz" = "Quiz";
 
+// HOME
+
+"home.swipe" = "Swipe sideways to turn the page.";
+
 // SETTINGS
 
 "settings.darkTheme" = "Dark theme";

@@ -11,6 +11,10 @@
 "title.settings" = "Ajustes";
 "title.quiz" = "Quiz";
 
+// HOME
+
+"home.swipe" = "Desliza hacia los lados para pasar de página.";
+
 // SETTINGS
 
 "settings.darkTheme" = "Tema Oscuro";

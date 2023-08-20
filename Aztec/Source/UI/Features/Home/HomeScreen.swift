@@ -9,8 +9,7 @@ import Combine
 import SwiftUI
 
 struct HomeScreen: View, NavigableView {
-//    @AppStorage(Constants.AppStorage.shouldShowOnboarding.rawValue)
-    @State
+    @AppStorage(Constants.AppStorage.shouldShowOnboarding.rawValue)
     private var shouldShowOnboarding: Bool = true
     
     var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
@@ -30,35 +29,30 @@ struct HomeScreen: View, NavigableView {
                 GeometryReader { geometry in
                     ZStack {
                         Color.black.opacity(0.75).ignoresSafeArea()
-                        Text(LocalizedStringKey("Swipe right to proceed"))
+                        Text(LocalizedStringKey("home.swipe".localized()))
                             .font(.pressStart(size: 12))
                             .foregroundColor(.black)
                             .multilineTextAlignment(.center)
-                            .padding(.horizontal, 16)
-                            .zIndex(2)
+                            .padding(.horizontal, 24)
                             .offset(x: -2, y: 2)
-                        Text(LocalizedStringKey("Swipe right to proceed"))
+                        Text(LocalizedStringKey("home.swipe".localized()))
                             .font(.pressStart(size: 12))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                            .padding(.horizontal, 16)
-                            .zIndex(2)
+                            .padding(.horizontal, 24)
                     }
-                    .gesture(DragGesture().onEnded { value in
-                        let translation = value.translation.width / geometry.frame(in: .global).width
-                        self.endedDragGestureWith(translation)
+                    .onTapGesture {
+                        self.didTapOnboarding()
+                    }
+                    .gesture(DragGesture().onEnded { _ in
+                        self.didTapOnboarding()
                     })
                 }
             }
         }
     }
     
-    private func endedDragGestureWith(_ value: CGFloat) {
-        if value > 0.1 {
-            shouldShowOnboarding = false
-        }
-        if value < -0.1 {
-            shouldShowOnboarding = false
-        }
+    private func didTapOnboarding() {
+        shouldShowOnboarding = false
     }
 }
