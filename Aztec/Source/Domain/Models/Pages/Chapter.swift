@@ -24,10 +24,10 @@ enum Chapter: CaseIterable {
         }
     }
     
-    var quiz: Quiz {
+    var quiz: [Quiz] {
         switch self {
         case .sun:
-            return SunQuiz().quiz
+            return [SunQuiz().quiz]
         }
     }
 }
