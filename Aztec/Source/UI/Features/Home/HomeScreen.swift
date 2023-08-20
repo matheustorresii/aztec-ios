@@ -22,7 +22,7 @@ struct HomeScreen: View, NavigableView {
                 navigation.send(.push(.settings))
             }
             
-            BookView()
+            BookView(page: SunPages.start)
         }
         .if(shouldShowOnboarding) { view in
             view.overlay {

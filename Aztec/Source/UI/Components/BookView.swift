@@ -10,12 +10,13 @@ import SwiftUI
 
 struct BookView: View {
     
-    @AppStorage(Constants.AppStorage.autoSpeech.rawValue) private var autoSpeech: Bool = false
+    @AppStorage(Constants.AppStorage.autoSpeech.rawValue)
+    private var autoSpeech: Bool = false
     
-    @State private var page: Pages = .beginning
     @State private var isBack: Bool = false
-    
     private let synthesizer = AVSpeechSynthesizer()
+    
+    @State var page: PageProtocol
     
     var body: some View {
         GeometryReader { geometry in
@@ -32,7 +33,7 @@ struct BookView: View {
     
     @ViewBuilder
     private func buildPage() -> some View {
-        if page.rawValue.isMultiple(of: 2) {
+        if page.value.isMultiple(of: 2) {
             PageView(page: page) { speak($0) }
         } else {
             PageView(page: page) { speak($0) }

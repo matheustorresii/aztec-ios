@@ -1,13 +1,13 @@
 //
-//  Pages.swift
+//  SunPages.swift
 //  Aztec
 //
-//  Created by Matheus Torres on 13/08/23.
+//  Created by Matheus Torres on 20/08/23.
 //
 
-import Foundation
+import SwiftUI
 
-enum Pages: Int {
+enum SunPages: Int, PageProtocol {
     case beginning
     case gods
     case firstSun
@@ -21,6 +21,59 @@ enum Pages: Int {
     case moon
     case human
     case fifthSun
+    
+    var view: AnyView {
+        var view: any View
+        switch self {
+        case .beginning:
+            view = Text(String.empty)
+        case .gods:
+            view = GodsPageView()
+        case .firstSun:
+            view = FirstSunPageView()
+        case .herd:
+            view = HerdPageView()
+        case .secondSun:
+            view = SecondSunPageView()
+        case .hurricane:
+            view = HurricanePageView()
+        case .thirdSun:
+            view = ThirdSunPageView()
+        case .drought:
+            view = DroughtPageView()
+        case .fourthSun:
+            view = FourthSunPageView()
+        case .flood:
+            view = FloodPageView()
+        case .moon:
+            view = MoonPageView()
+        case .human:
+            view = HumanPageView()
+        case .fifthSun:
+            view = FifthSunPageView()
+        }
+        return AnyView(view)
+    }
+    
+    var title: String {
+        return "Five Suns"
+    }
+    
+    static var start: PageProtocol {
+        return SunPages.beginning
+    }
+    
+    var next: PageProtocol? {
+        return SunPages(rawValue: self.rawValue+1)
+    }
+    
+    var previous: PageProtocol? {
+        return SunPages(rawValue: self.rawValue-1)
+    }
+    
+    var value: Int {
+        return self.rawValue
+    }
     
     var topText: String? {
         switch self {
@@ -81,68 +134,6 @@ enum Pages: Int {
             return "pages.human.bottom"
         case .fifthSun:
             return "pages.fifthSun.bottom"
-        }
-    }
-    
-    var next: Pages? {
-        switch self {
-        case .beginning:
-            return .gods
-        case .gods:
-            return .firstSun
-        case .firstSun:
-            return .herd
-        case .herd:
-            return .secondSun
-        case .secondSun:
-            return .hurricane
-        case .hurricane:
-            return .thirdSun
-        case .thirdSun:
-            return .drought
-        case .drought:
-            return .fourthSun
-        case .fourthSun:
-            return .flood
-        case .flood:
-            return .moon
-        case .moon:
-            return .human
-        case .human:
-            return .fifthSun
-        case .fifthSun:
-            return nil
-        }
-    }
-    
-    var previous: Pages? {
-        switch self {
-        case .beginning:
-            return nil
-        case .gods:
-            return .beginning
-        case .firstSun:
-            return .gods
-        case .herd:
-            return .firstSun
-        case .secondSun:
-            return .herd
-        case .hurricane:
-            return .secondSun
-        case .thirdSun:
-            return .hurricane
-        case .drought:
-            return .thirdSun
-        case .fourthSun:
-            return .drought
-        case .flood:
-            return .fourthSun
-        case .moon:
-            return .flood
-        case .human:
-            return .moon
-        case .fifthSun:
-            return .human
         }
     }
 }
