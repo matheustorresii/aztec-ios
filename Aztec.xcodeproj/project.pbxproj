@@ -58,7 +58,7 @@
 
 /* Begin PBXFileReference section */
 		FC1467B52A8C496F0023880B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FC1C0FC62A8206EF0075AB92 /* Aztec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aztec.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC1C0FC62A8206EF0075AB92 /* Aztec X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aztec X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1C0FC92A8206EF0075AB92 /* AztecApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AztecApp.swift; sourceTree = "<group>"; };
 		FC1C0FCD2A8206F10075AB92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1C0FD02A8206F10075AB92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		FC1C0FC72A8206EF0075AB92 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC1C0FC62A8206EF0075AB92 /* Aztec.app */,
+				FC1C0FC62A8206EF0075AB92 /* Aztec X.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,9 +356,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC1C0FC52A8206EF0075AB92 /* Aztec */ = {
+		FC1C0FC52A8206EF0075AB92 /* Aztec X */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC1C0FD42A8206F10075AB92 /* Build configuration list for PBXNativeTarget "Aztec" */;
+			buildConfigurationList = FC1C0FD42A8206F10075AB92 /* Build configuration list for PBXNativeTarget "Aztec X" */;
 			buildPhases = (
 				FC1C0FC22A8206EF0075AB92 /* Sources */,
 				FC1C0FC32A8206EF0075AB92 /* Frameworks */,
@@ -368,9 +368,9 @@
 			);
 			dependencies = (
 			);
-			name = Aztec;
+			name = "Aztec X";
 			productName = Aztec;
-			productReference = FC1C0FC62A8206EF0075AB92 /* Aztec.app */;
+			productReference = FC1C0FC62A8206EF0075AB92 /* Aztec X.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -404,7 +404,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC1C0FC52A8206EF0075AB92 /* Aztec */,
+				FC1C0FC52A8206EF0075AB92 /* Aztec X */,
 			);
 		};
 /* End PBXProject section */
@@ -689,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC1C0FD42A8206F10075AB92 /* Build configuration list for PBXNativeTarget "Aztec" */ = {
+		FC1C0FD42A8206F10075AB92 /* Build configuration list for PBXNativeTarget "Aztec X" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC1C0FD52A8206F10075AB92 /* Debug */,
