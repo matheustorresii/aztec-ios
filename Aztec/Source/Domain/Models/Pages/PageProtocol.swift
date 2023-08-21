@@ -8,6 +8,8 @@
 import SwiftUI
 
 protocol PageProtocol {
+    static var start: PageProtocol { get }
+    
     var next: PageProtocol? { get }
     var previous: PageProtocol? { get }
     var value: Int { get }
