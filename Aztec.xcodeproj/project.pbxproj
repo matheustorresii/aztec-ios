@@ -46,7 +46,7 @@
 		FCA6944C2A8A2B0A00278908 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA6944B2A8A2B0A00278908 /* HeaderView.swift */; };
 		FCA694512A8A31D400278908 /* QuizListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694502A8A31D400278908 /* QuizListScreen.swift */; };
 		FCA694552A8A32AB00278908 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694542A8A32AB00278908 /* Quiz.swift */; };
-		FCA694572A8A363200278908 /* QuizListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694562A8A363200278908 /* QuizListCellView.swift */; };
+		FCA694572A8A363200278908 /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA694562A8A363200278908 /* ItemCellView.swift */; };
 		FCABB4442A8B1E7400DF9306 /* QuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */; };
 		FCABB4462A8B36C800DF9306 /* SunQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABB4452A8B36C800DF9306 /* SunQuiz.swift */; };
 		FCC3F5B22A91EDFF0074924D /* PageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC3F5B12A91EDFF0074924D /* PageProtocol.swift */; };
@@ -101,7 +101,7 @@
 		FCA6944B2A8A2B0A00278908 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		FCA694502A8A31D400278908 /* QuizListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListScreen.swift; sourceTree = "<group>"; };
 		FCA694542A8A32AB00278908 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
-		FCA694562A8A363200278908 /* QuizListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizListCellView.swift; sourceTree = "<group>"; };
+		FCA694562A8A363200278908 /* ItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
 		FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultView.swift; sourceTree = "<group>"; };
 		FCABB4452A8B36C800DF9306 /* SunQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunQuiz.swift; sourceTree = "<group>"; };
 		FCC3F5B12A91EDFF0074924D /* PageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageProtocol.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 				FCA6944B2A8A2B0A00278908 /* HeaderView.swift */,
 				FCC3F5B62A91F6B70074924D /* OnboardingView.swift */,
 				FCA694112A89B0C700278908 /* PageView.swift */,
-				FCA694562A8A363200278908 /* QuizListCellView.swift */,
+				FCA694562A8A363200278908 /* ItemCellView.swift */,
 				FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */,
 				FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */,
 				FC94E8882A8AC82E0027B826 /* SwitchView.swift */,
@@ -452,7 +452,7 @@
 				FCA694512A8A31D400278908 /* QuizListScreen.swift in Sources */,
 				FCA694252A89CC5B00278908 /* HerdPageView.swift in Sources */,
 				FCA694452A8A187A00278908 /* String+Extensions.swift in Sources */,
-				FCA694572A8A363200278908 /* QuizListCellView.swift in Sources */,
+				FCA694572A8A363200278908 /* ItemCellView.swift in Sources */,
 				FCC3F5BB2A91F87E0074924D /* Chapter.swift in Sources */,
 				FCA6942F2A89EA9D00278908 /* ThirdSunPageView.swift in Sources */,
 				FCA694312A89EAA600278908 /* DroughtPageView.swift in Sources */,

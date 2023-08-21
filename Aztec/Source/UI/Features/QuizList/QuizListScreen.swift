@@ -22,7 +22,7 @@ struct QuizListScreen: View, NavigableView {
                     Button {
                         navigation.send(.push(.quiz(quiz)))
                     } label: {
-                        QuizListCellView(index: index, quiz: quiz)
+                        ItemCellView(index: index, label: quiz.title)
                     }
                     .tint(.primary)
                 }

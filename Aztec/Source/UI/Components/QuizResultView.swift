@@ -12,8 +12,8 @@ struct QuizResultView: View {
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            ForEach(Array(quiz.questions.enumerated()), id: \.offset) { index, question in
-                VStack {
+            VStack {
+                ForEach(Array(quiz.questions.enumerated()), id: \.offset) { index, question in
                     buildResultLine(index: index, question: question)
                 }
             }

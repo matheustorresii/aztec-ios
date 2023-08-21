@@ -12,6 +12,7 @@ struct HomeScreen: View, NavigableView {
     @AppStorage(Constants.AppStorage.shouldShowOnboarding.rawValue)
     private var shouldShowOnboarding: Bool = true
     
+    @State private var shouldShowChapterSelector: Bool = false
     @State private var chapter: Chapter = .sun
     
     var navigation: PassthroughSubject<FlowNavigationStyle, Never> = .init()
@@ -26,6 +27,11 @@ struct HomeScreen: View, NavigableView {
                        rightAction: didTapRightIcon)
             
             BookView(page: chapter.page)
+                .if(shouldShowChapterSelector) { view in
+                    view.overlay {
+                        buildChapterSelector()
+                    }
+                }
         }
         .if(shouldShowOnboarding) { view in
             view.overlay {
@@ -35,7 +41,7 @@ struct HomeScreen: View, NavigableView {
     }
     
     private func didTapTitle() {
-        print("didTapTitle")
+        shouldShowChapterSelector.toggle()
     }
     
     private func didTapLeftIcon() {
@@ -48,5 +54,32 @@ struct HomeScreen: View, NavigableView {
     
     private func didTapOnboarding() {
         shouldShowOnboarding = false
+    }
+    
+    private func didTap(chapter selectedChapter: Chapter) {
+        shouldShowChapterSelector.toggle()
+        chapter = selectedChapter
+    }
+    
+    @ViewBuilder
+    private func buildChapterSelector() -> some View {
+        ZStack {
+            Color.black.opacity(0.75).ignoresSafeArea()
+            ScrollView {
+                VStack(spacing: 0) {
+                    ForEach(Array(Chapter.allCases.enumerated()), id: \.offset) { (index, chapter) in
+                        Button {
+                            didTap(chapter: chapter)
+                        } label: {
+                            ItemCellView(index: index, label: chapter.title)
+                        }
+                        .tint(.primary)
+                    }
+                }
+            }
+            .onTapGesture {
+                shouldShowChapterSelector.toggle()
+            }
+        }
     }
 }

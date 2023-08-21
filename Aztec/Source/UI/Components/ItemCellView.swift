@@ -1,5 +1,5 @@
 //
-//  QuizListCellView.swift
+//  ItemCellView.swift
 //  Aztec
 //
 //  Created by Matheus Torres on 14/08/23.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct QuizListCellView: View {
+struct ItemCellView: View {
     
     let index: Int
-    let quiz: Quiz
+    let label: String
     
     var body: some View {
         HStack {
@@ -22,7 +22,7 @@ struct QuizListCellView: View {
             Color.primary.frame(width: 2)
             HStack {
                 Spacer()
-                Text("\(quiz.title)")
+                Text(label)
                     .font(.pressStart(size: 24))
                     .multilineTextAlignment(.center)
                     .zIndex(2)
@@ -31,14 +31,15 @@ struct QuizListCellView: View {
         }
         .border(.primary, width: 4)
         .frame(height: 95)
-        .padding(.top, 16)
+        .padding(.vertical, 8)
         .padding(.horizontal, 16)
+        .background(.background)
     }
 }
 
-struct QuizListCellView_Previews: PreviewProvider {
+struct ItemCellView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizListCellView(index: 98,
-                         quiz: .init(title: "Test Quiz", questions: []))
+        ItemCellView(index: 98,
+                     label: "Test Quiz")
     }
 }
