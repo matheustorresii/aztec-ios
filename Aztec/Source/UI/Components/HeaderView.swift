@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct HeaderView: View {
-    let title: String?
-    let leftLabel: String?
-    let rightLabel: String?
+    private let title: String?
+    private let leftLabel: String?
+    private let rightLabel: String?
     
-    let titleAction: (() -> ())?
-    let leftAction: (() -> ())?
-    let rightAction: (() -> ())?
+    private let titleAction: (() -> Void)?
+    private let leftAction: (() -> Void)?
+    private let rightAction: (() -> Void)?
     
     init(
         title: String? = nil,
         leftLabel: String? = nil,
         rightLabel: String? = nil,
-        titleAction: (() -> ())? = nil,
-        leftAction: (() -> ())? = nil,
-        rightAction: (() -> ())? = nil) {
+        titleAction: (() -> Void)? = nil,
+        leftAction: (() -> Void)? = nil,
+        rightAction: (() -> Void)? = nil) {
             self.title = title
             self.leftLabel = leftLabel
             self.rightLabel = rightLabel
@@ -60,7 +60,7 @@ struct HeaderView: View {
     }
     
     @ViewBuilder
-    private func buildClickableTitle(title: String, titleAction: @escaping (() -> ())) -> some View {
+    private func buildClickableTitle(title: String, titleAction: @escaping (() -> Void)) -> some View {
         Button {
             titleAction()
         } label: {
@@ -77,7 +77,7 @@ struct HeaderView: View {
     }
     
     @ViewBuilder
-    private func buildButton(label: String?, action: (() -> ())?) -> some View {
+    private func buildButton(label: String?, action: (() -> Void)?) -> some View {
         if let label, let action {
             Button {
                 action()

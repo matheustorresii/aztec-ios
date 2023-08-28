@@ -54,10 +54,10 @@ struct SunQuiz: QuizProtocol {
                 // MARK: - 5
                 .init(question: "quiz.sun.5.question".localized(),
                       options: [
-                        .init(id: .A, option: "quiz.sun.1.A".localized()),
-                        .init(id: .B, option: "quiz.sun.2.B".localized()),
-                        .init(id: .C, option: "quiz.sun.3.C".localized()),
-                        .init(id: .D, option: "quiz.sun.4.D".localized()),
+                        .init(id: .A, option: "quiz.sun.5.A".localized()),
+                        .init(id: .B, option: "quiz.sun.5.B".localized()),
+                        .init(id: .C, option: "quiz.sun.5.C".localized()),
+                        .init(id: .D, option: "quiz.sun.5.D".localized()),
                       ],
                       answer: .D,
                       description: "quiz.sun.5.description".localized()),

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PageView: View {
     let page: PageProtocol
-    let didAppearWithText: ((String) -> ())?
+    let didAppearWithText: ((String) -> Void)?
     
     var body: some View {
         VStack(alignment: .center, spacing: 24) {

@@ -22,41 +22,12 @@ enum SunPages: Int, PageProtocol {
     case human
     case fifthSun
     
-    var view: AnyView {
-        var view: any View
-        switch self {
-        case .beginning:
-            view = Text(String.empty)
-        case .gods:
-            view = GodsPageView()
-        case .firstSun:
-            view = FirstSunPageView()
-        case .herd:
-            view = HerdPageView()
-        case .secondSun:
-            view = SecondSunPageView()
-        case .hurricane:
-            view = HurricanePageView()
-        case .thirdSun:
-            view = ThirdSunPageView()
-        case .drought:
-            view = DroughtPageView()
-        case .fourthSun:
-            view = FourthSunPageView()
-        case .flood:
-            view = FloodPageView()
-        case .moon:
-            view = MoonPageView()
-        case .human:
-            view = HumanPageView()
-        case .fifthSun:
-            view = FifthSunPageView()
-        }
-        return AnyView(view)
-    }
-    
     static var start: PageProtocol {
         return SunPages.beginning
+    }
+    
+    var title: String {
+        return Chapter.sun.title
     }
     
     var next: PageProtocol? {
@@ -131,5 +102,38 @@ enum SunPages: Int, PageProtocol {
         case .fifthSun:
             return "pages.fifthSun.bottom"
         }
+    }
+    
+    var view: AnyView {
+        var view: any View
+        switch self {
+        case .beginning:
+            view = Text(String.empty)
+        case .gods:
+            view = GodsPageView()
+        case .firstSun:
+            view = FirstSunPageView()
+        case .herd:
+            view = HerdPageView()
+        case .secondSun:
+            view = SecondSunPageView()
+        case .hurricane:
+            view = HurricanePageView()
+        case .thirdSun:
+            view = ThirdSunPageView()
+        case .drought:
+            view = DroughtPageView()
+        case .fourthSun:
+            view = FourthSunPageView()
+        case .flood:
+            view = FloodPageView()
+        case .moon:
+            view = MoonPageView()
+        case .human:
+            view = HumanPageView()
+        case .fifthSun:
+            view = FifthSunPageView()
+        }
+        return AnyView(view)
     }
 }

@@ -45,7 +45,7 @@ struct QuizScreen: View, NavigableView {
     
     @ViewBuilder
     private func buildQuizView(_ question: Quiz.Question,
-                               didTapOption: ((Quiz.Question.OptionId) -> ())?) -> some View {
+                               didTapOption: ((Quiz.Question.OptionId) -> Void)?) -> some View {
         VStack {
             buildProgressView()
             
@@ -65,6 +65,9 @@ struct QuizScreen: View, NavigableView {
                         }
                 }
             }
+            
+            Spacer()
+                .frame(height: 16)
         }
     }
     

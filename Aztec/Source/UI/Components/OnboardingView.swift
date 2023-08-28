@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    let didTap: (() -> ())?
+    let didTap: (() -> Void)?
     
     var body: some View {
         GeometryReader { geometry in

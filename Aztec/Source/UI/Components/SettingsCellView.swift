@@ -11,7 +11,7 @@ struct SettingsCellView: View {
     let id: String
     let text: String
     let initialState: Bool
-    let didTapSwitchWithId: ((String) -> ())?
+    let didTapSwitchWithId: ((String) -> Void)?
     
     var body: some View {
         HStack {

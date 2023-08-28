@@ -16,7 +16,7 @@ struct BookView: View {
     @State private var isBack: Bool = false
     private let synthesizer = AVSpeechSynthesizer()
     
-    @State var page: PageProtocol
+    @Binding var page: PageProtocol
     
     var body: some View {
         GeometryReader { geometry in

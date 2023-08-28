@@ -12,9 +12,9 @@ struct SwitchView: View {
     
     private let id: String
     
-    var didTapSwitchWithId: ((String) -> ())?
+    var didTapSwitchWithId: ((String) -> Void)?
     
-    init(id: String = .empty, state: Bool, didTapSwitchWithId: ((String) -> ())? = nil) {
+    init(id: String = .empty, state: Bool, didTapSwitchWithId: ((String) -> Void)? = nil) {
         self.id = id
         self.state = state
         self.didTapSwitchWithId = didTapSwitchWithId
