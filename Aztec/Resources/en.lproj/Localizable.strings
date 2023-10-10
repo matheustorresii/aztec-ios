@@ -106,3 +106,16 @@
 "quiz.sun.5.B" = "Huitzilopochtli";
 "quiz.sun.5.C" = "Xipe Totec";
 "quiz.sun.5.D" = "Tonatiuh";
+
+
+"quiz.four.gods.1.question" = "What animal was the symbol of Quetzalcoatl?";
+"quiz.four.gods.2.question" = "What animal was the symbol of Tezcatlipoca?";
+"quiz.four.gods.3.question" = "What animal was the symbol of Xipe Totec?";
+"quiz.four.gods.4.question" = "What animal was the symbol of Huitzilopochtli?";
+"quiz.four.gods.cat" = "Cat";
+"quiz.four.gods.feathered.serpent" = "Feathered Serpent";
+"quiz.four.gods.bee" = "Bee";
+"quiz.four.gods.hummingbird" = "Hummingbird";
+"quiz.four.gods.dragon" = "Dragon";
+"quiz.four.gods.jaguar" = "Jaguar";
+"quiz.four.gods.quail" = "Quail";

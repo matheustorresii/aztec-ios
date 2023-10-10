@@ -45,7 +45,7 @@ struct GodsPageView: View {
     
     @ViewBuilder
     private func createImageInnerView(_ image: String) -> some View {
-        Text(NSLocalizedString(getTextForImage(image), comment: .empty))
+        Text(getTextForImage(image).localized())
             .font(.pressStart(size: 20))
             .fixedSize(horizontal: false, vertical: true)
     }

@@ -37,14 +37,14 @@ struct PageView: View {
         var fullText: String = .empty
         
         if let pageTopText = page.topText {
-            fullText += NSLocalizedString(pageTopText, comment: .empty)
+            fullText += pageTopText.localized()
         }
         
         if let pageBottomText = page.bottomText {
             if page.topText != nil {
                 fullText += .space
             }
-            fullText += NSLocalizedString(pageBottomText, comment: .empty)
+            fullText += pageBottomText.localized()
         }
         return fullText
     }

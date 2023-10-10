@@ -15,6 +15,7 @@
 		FC94E8892A8AC82E0027B826 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E8882A8AC82E0027B826 /* SwitchView.swift */; };
 		FC94E88D2A8AE8020027B826 /* SettingsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */; };
 		FC94E88F2A8AEBF30027B826 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E88E2A8AEBF30027B826 /* Constants.swift */; };
+		FC9689A42AD50F7700D7169B /* FourGodsQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9689A32AD50F7700D7169B /* FourGodsQuiz.swift */; };
 		FCA570622AA9A51400750998 /* BottomsheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA570612AA9A51400750998 /* BottomsheetModifier.swift */; };
 		FCA570682AA9AF7E00750998 /* ActionImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA570672AA9AF7E00750998 /* ActionImageModifier.swift */; };
 		FCA693F12A886F2E00278908 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693F02A886F2E00278908 /* AppCoordinator.swift */; };
@@ -69,6 +70,7 @@
 		FC94E8882A8AC82E0027B826 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellView.swift; sourceTree = "<group>"; };
 		FC94E88E2A8AEBF30027B826 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC9689A32AD50F7700D7169B /* FourGodsQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourGodsQuiz.swift; sourceTree = "<group>"; };
 		FCA570612AA9A51400750998 /* BottomsheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomsheetModifier.swift; sourceTree = "<group>"; };
 		FCA570672AA9AF7E00750998 /* ActionImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionImageModifier.swift; sourceTree = "<group>"; };
 		FCA693F02A886F2E00278908 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				FCABB4452A8B36C800DF9306 /* SunQuiz.swift */,
+				FC9689A32AD50F7700D7169B /* FourGodsQuiz.swift */,
 			);
 			path = Levels;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				FCC3F5BB2A91F87E0074924D /* Chapter.swift in Sources */,
 				FCA6942F2A89EA9D00278908 /* ThirdSunPageView.swift in Sources */,
 				FCA694312A89EAA600278908 /* DroughtPageView.swift in Sources */,
+				FC9689A42AD50F7700D7169B /* FourGodsQuiz.swift in Sources */,
 				FCA694392A89EAC600278908 /* HumanPageView.swift in Sources */,
 				FCA6942B2A89EA8600278908 /* SecondSunPageView.swift in Sources */,
 				FCA694122A89B0C700278908 /* PageView.swift in Sources */,
