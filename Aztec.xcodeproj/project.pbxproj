@@ -15,6 +15,8 @@
 		FC94E8892A8AC82E0027B826 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E8882A8AC82E0027B826 /* SwitchView.swift */; };
 		FC94E88D2A8AE8020027B826 /* SettingsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */; };
 		FC94E88F2A8AEBF30027B826 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC94E88E2A8AEBF30027B826 /* Constants.swift */; };
+		FCA570622AA9A51400750998 /* BottomsheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA570612AA9A51400750998 /* BottomsheetModifier.swift */; };
+		FCA570682AA9AF7E00750998 /* ActionImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA570672AA9AF7E00750998 /* ActionImageModifier.swift */; };
 		FCA693F12A886F2E00278908 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693F02A886F2E00278908 /* AppCoordinator.swift */; };
 		FCA693F32A89636C00278908 /* FlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693F22A89636C00278908 /* FlowView.swift */; };
 		FCA693F82A89642F00278908 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA693F72A89642F00278908 /* HomeScreen.swift */; };
@@ -67,6 +69,8 @@
 		FC94E8882A8AC82E0027B826 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellView.swift; sourceTree = "<group>"; };
 		FC94E88E2A8AEBF30027B826 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FCA570612AA9A51400750998 /* BottomsheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomsheetModifier.swift; sourceTree = "<group>"; };
+		FCA570672AA9AF7E00750998 /* ActionImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionImageModifier.swift; sourceTree = "<group>"; };
 		FCA693F02A886F2E00278908 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FCA693F22A89636C00278908 /* FlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowView.swift; sourceTree = "<group>"; };
 		FCA693F72A89642F00278908 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -179,6 +183,32 @@
 			path = Levels;
 			sourceTree = "<group>";
 		};
+		FCA570652AA9AF0D00750998 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCA694192A89B52D00278908 /* Pages */,
+				FCA6940B2A89946D00278908 /* BookView.swift */,
+				FC4C5D3F2A9C3A1B00369FCD /* ChapterSelectorView.swift */,
+				FCA6944B2A8A2B0A00278908 /* HeaderView.swift */,
+				FCA694562A8A363200278908 /* ItemCellView.swift */,
+				FCC3F5B62A91F6B70074924D /* OnboardingView.swift */,
+				FCA694112A89B0C700278908 /* PageView.swift */,
+				FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */,
+				FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */,
+				FC94E8882A8AC82E0027B826 /* SwitchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCA570662AA9AF1200750998 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FCA570612AA9A51400750998 /* BottomsheetModifier.swift */,
+				FCA570672AA9AF7E00750998 /* ActionImageModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		FCA693E32A886E0C00278908 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,16 +270,8 @@
 		FCA694062A897A9900278908 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FCA694192A89B52D00278908 /* Pages */,
-				FCA6940B2A89946D00278908 /* BookView.swift */,
-				FC4C5D3F2A9C3A1B00369FCD /* ChapterSelectorView.swift */,
-				FCA6944B2A8A2B0A00278908 /* HeaderView.swift */,
-				FCA694562A8A363200278908 /* ItemCellView.swift */,
-				FCC3F5B62A91F6B70074924D /* OnboardingView.swift */,
-				FCA694112A89B0C700278908 /* PageView.swift */,
-				FCABB4432A8B1E7400DF9306 /* QuizResultView.swift */,
-				FC94E88C2A8AE8020027B826 /* SettingsCellView.swift */,
-				FC94E8882A8AC82E0027B826 /* SwitchView.swift */,
+				FCA570662AA9AF1200750998 /* Modifiers */,
+				FCA570652AA9AF0D00750998 /* Views */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -439,6 +461,8 @@
 				FCA6943F2A89FE3300278908 /* View+Extensions.swift in Sources */,
 				FCA693FA2A8964B400278908 /* NavigableView.swift in Sources */,
 				FCC3F5B92A91F8740074924D /* QuizProtocol.swift in Sources */,
+				FCA570622AA9A51400750998 /* BottomsheetModifier.swift in Sources */,
+				FCA570682AA9AF7E00750998 /* ActionImageModifier.swift in Sources */,
 				FCA6941B2A89B55400278908 /* GodsPageView.swift in Sources */,
 				FCABB4442A8B1E7400DF9306 /* QuizResultView.swift in Sources */,
 				FCA693F32A89636C00278908 /* FlowView.swift in Sources */,

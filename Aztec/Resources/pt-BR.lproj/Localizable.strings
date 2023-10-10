@@ -6,6 +6,10 @@
   
 */
 
+// MAIN
+
+"main.close" = "Fechar";
+
 // TITLE
 
 "title.settings" = "Ajustes";
@@ -25,6 +29,10 @@
 "pages.beginning.top" = "Há muito tempo, Ōmeteōtl, o deus duplo, teve quatro filhos.";
 
 "pages.gods.top" = "Eles eram Xipe Totec, Tezcatlipoca, Quetzalcóatl e Huitzilopochtli.";
+"pages.gods.quetzalcoatl" = "Quetzalcoatl, seu símbolo era a serpente emplumada.";
+"pages.gods.tezcatlipoca" = "Tezcatlipoca, seu símbolo era a onça.";
+"pages.gods.huitzilopochtli" = "Huitzilopochtli, seu símbolo era o beija-flor.";
+"pages.gods.xipetotec" = "Xipe Totec, seu símbolo era a codorna.";
 
 "pages.firstSun.top" = "Durante essa era, havia fortes gigantes vivendo na Terra, mas eles precisavam de um Sol.";
 "pages.firstSun.bottom" = "O Primeiro Sol foi Tezcatlipoca, e seu reinado como o primeiro deus sol é conhecido como Sol-Onça.";

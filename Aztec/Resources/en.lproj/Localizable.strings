@@ -6,6 +6,10 @@
   
 */
 
+// MAIN
+
+"main.close" = "Close";
+
 // TITLE
 
 "title.settings" = "Settings";
@@ -25,6 +29,10 @@
 "pages.beginning.top" = "A long time ago, Ometeotl, the dual god, had four children.";
 
 "pages.gods.top" = "They were Xipe Totec, Tezcatlipoca, Quetzalcoatl, and Huitzilopochtli.";
+"pages.gods.quetzalcoatl" = "Quetzalcoatl, his symbol was the feathered serpent.";
+"pages.gods.tezcatlipoca" = "Tezcatlipoca, his symbol was the jaguar.";
+"pages.gods.huitzilopochtli" = "Huitzilopochtli, his symbol was the hummingbird.";
+"pages.gods.xipetotec" = "Xipe Totec, his symbol was the quail.";
 
 "pages.firstSun.top" = "During that era, there were strong giants living on Earth, but they needed a Sun.";
 "pages.firstSun.bottom" = "The First Sun was Tezcatlipoca, and his reign as the first sun god is known as the Jaguar Sun.";

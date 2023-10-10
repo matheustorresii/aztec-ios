@@ -6,6 +6,10 @@
   
 */
 
+// MAIN
+
+"main.close" = "Cerrar";
+
 // TITLE
 
 "title.settings" = "Ajustes";
@@ -25,6 +29,10 @@
 "pages.beginning.top" = "Hace mucho tiempo, Ōmeteōtl, el dios dual, tuvo cuatro hijos.";
 
 "pages.gods.top" = "Eran Xipe Totec, Tezcatlipoca, Quetzalcóatl y Huitzilopochtli.";
+"pages.gods.quetzalcoatl" = "Quetzalcoatl, su símbolo era la serpiente emplumada.";
+"pages.gods.tezcatlipoca" = "Tezcatlipoca, su símbolo era el jaguar.";
+"pages.gods.huitzilopochtli" = "Huitzilopochtli, su símbolo era el colibrí.";
+"pages.gods.xipetotec" = "Xipe Totec, su símbolo era la codorniz.";
 
 "pages.firstSun.top" = "Durante esa era, había fuertes gigantes viviendo en la Tierra, pero necesitaban un Sol.";
 "pages.firstSun.bottom" = "El Primer Sol fue Tezcatlipoca, y su reinado como el primer dios del sol es conocido como Sol-Jaguar.";
