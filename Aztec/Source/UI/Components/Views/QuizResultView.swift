@@ -25,7 +25,7 @@ struct QuizResultView: View {
         VStack(alignment: .center, spacing: 0) {
             Spacer().frame(height: 24)
             
-            Text("Question \(index + 1)")
+            Text("\("main.question".localized()) \(index + 1)")
                 .font(.pressStart(size: 28))
             
             Spacer().frame(height: 8)
@@ -33,7 +33,7 @@ struct QuizResultView: View {
             if let selected = question.selected {
                 Text(selected.rawValue + ":")
                     .font(.pressStart(size: 24)) +
-                Text(selected == question.answer ? "Correct" : "Incorrect")
+                Text(selected == question.answer ? "main.correct".localized() : "main.incorrect".localized())
                     .font(.pressStart(size: 24))
                     .foregroundColor(selected == question.answer ? .green : .red)
             }

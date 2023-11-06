@@ -58,8 +58,8 @@ struct BookView: View {
     }
     
     private func speak(_ string: String) {
-        synthesizer.stopSpeaking(at: .immediate)
         guard autoSpeech, let identifier = identifierForVoice() else { return }
+        synthesizer.stopSpeaking(at: .immediate)
         let utterance = AVSpeechUtterance(string: string)
         utterance.voice = .init(identifier: identifier)
         synthesizer.speak(utterance)

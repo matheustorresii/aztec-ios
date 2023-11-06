@@ -9,6 +9,9 @@
 // MAIN
 
 "main.close" = "Fechar";
+"main.question" = "Pergunta";
+"main.correct" = "Correto";
+"main.incorrect" = "Incorreto";
 
 // TITLE
 
@@ -26,7 +29,7 @@
 
 // PAGES
 
-"pages.beginning.top" = "Há muito tempo, Ōmeteōtl, o deus duplo, teve quatro filhos.";
+"pages.beginning.top" = "Há muito tempo, Ometeōtl, o deus duplo, teve quatro filhos.";
 
 "pages.gods.top" = "Eles eram Xipe Totec, Tezcatlipoca, Quetzalcóatl e Huitzilopochtli.";
 "pages.gods.quetzalcoatl" = "Quetzalcoatl, seu símbolo era a serpente emplumada.";

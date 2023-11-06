@@ -9,6 +9,9 @@
 // MAIN
 
 "main.close" = "Close";
+"main.question" = "Question";
+"main.correct" = "Correct";
+"main.incorrect" = "incorrect";
 
 // TITLE
 
